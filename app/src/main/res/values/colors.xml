@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="bg_color">#F9FAFB</color>
+    <color name="f_purple_gradient_color">#EF3672</color>
+    <color name="s_purple_gradient_color">#EF3657</color>
+    <color name="black_text_color">#000000</color>
+    <color name="gray_color">#757F8C</color>
+    <color name="facebook_color">#3D5897</color>
+    <color name="pink_color">#EF3672</color>
+    <color name="white_text_color">#F2F2F2</color>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
