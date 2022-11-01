@@ -2,4 +2,7 @@
     <string name="app_name">Googoosha</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_text">Найди свое\nИдеальное\nсовпадение\nСегодня</string>
+    <string name="to_auth">Авторизоваться</string>
+    <string name="to_signup">Зарегистрироваться</string>
 </resources>
