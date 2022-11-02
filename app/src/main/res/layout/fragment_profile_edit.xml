@@ -1,10 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".screens.ProfileEditFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/auth_title"
+            style="@style/screen_title"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/profile" />
+
+        <TextView
+            android:id="@+id/edit_btn"
+            style="@style/screen_title"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="end"
+            android:text="@string/to_save"
+            android:textColor="@color/pink_color" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_image"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="48dp"
+        app:cardBackgroundColor="@color/pink_color"
+        app:cardCornerRadius="200dp"
+        app:cardElevation="0dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:text="@string/user_name"
+        android:layout_marginTop="48dp"
+        style="@style/profile_field_title" />
+
+    <EditText
+        android:id="@+id/username_et"
+        android:text="Jayson Doe"
+        style="@style/profile_field_input" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:text="@string/el_address"
+        android:layout_marginTop="16dp"
+        style="@style/profile_field_title" />
+
+    <EditText
+        android:id="@+id/mail_et"
+        android:text="JaysonDoe@mgail.com"
+        style="@style/profile_field_input" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:text="@string/phone"
+        android:layout_marginTop="16dp"
+        style="@style/profile_field_title" />
+
+    <EditText
+        android:id="@+id/phone_et"
+        android:text="+882 114 225 222"
+        style="@style/profile_field_input" />
+
+    <TextView
+        android:id="@+id/location"
+        android:text="@string/location"
+        android:layout_marginTop="16dp"
+        style="@style/profile_field_title" />
+
+    <EditText
+        android:id="@+id/location_et"
+        android:text="New york San fransico"
+        style="@style/profile_field_input" />
+
+    <TextView
+        android:id="@+id/born_date"
+        android:text="@string/born_date"
+        android:layout_marginTop="16dp"
+        style="@style/profile_field_title" />
+
+    <EditText
+        android:id="@+id/born_date_et"
+        android:text="20-02-1998"
+        style="@style/profile_field_input" />
+
+</LinearLayout>

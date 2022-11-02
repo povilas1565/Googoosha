@@ -22,4 +22,19 @@
     <string name="terms_of_use">условия использования</string>
     <string name="already_have_account">Уже есть аккаунт?</string>
     <string name="login">Войти</string>
+    <string name="profile">Профиль</string>
+    <string name="edit">Изменить</string>
+    <string name="profile_example">Jayson Moama, 34</string>
+    <string name="location_example">Сан-Франциско, США</string>
+    <string name="subscribers">Подписчики</string>
+    <string name="subscriptions">Подписки</string>
+    <string name="favourites">Избранное</string>
+    <string name="interesting">Интересующие</string>
+    <string name="info">Инфо</string>
+    <string name="gallery">Галерея</string>
+    <string name="to_save">Сохранять</string>
+    <string name="el_address">Эл. адрес</string>
+    <string name="phone">Телефон</string>
+    <string name="location">Локация</string>
+    <string name="born_date">Дата рождения</string>
 </resources>
