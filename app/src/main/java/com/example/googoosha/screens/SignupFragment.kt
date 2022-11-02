@@ -6,17 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.googoosha.databinding.FragmentAuthBinding
-import com.example.googoosha.databinding.FragmentSplashBinding
-import com.example.googoosha.utils.replaceFragment
+import com.example.googoosha.databinding.FragmentSignupBinding
 
-class SplashFragment : Fragment() {
-    private lateinit var binding: FragmentSplashBinding
+class SignupFragment : Fragment() {
+    private lateinit var binding: FragmentSignupBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSplashBinding.inflate(inflater, container, false)
+        binding = FragmentSignupBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -26,11 +25,6 @@ class SplashFragment : Fragment() {
     }
 
     private fun initFuns() {
-        binding.authBtn.setOnClickListener {
-            replaceFragment(AuthFragment(), false)
-        }
-        binding.signupBtn.setOnClickListener {
-            replaceFragment(SignupFragment(), false)
-        }
+
     }
 }

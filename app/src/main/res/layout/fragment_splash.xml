@@ -8,28 +8,41 @@
 
     <ImageView
         android:id="@+id/bg_image"
-        android:src="@drawable/splash_image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pink_gradient"
+        android:alpha="0.5"/>
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/gilroy_bold"
         android:text="@string/splash_text"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="44sp"
         app:layout_constraintBottom_toTopOf="@id/auth_btn"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/auth_btn"
         style="@style/btn_corner_32"
-        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/pink_color"
         android:text="@string/to_auth"
-        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/signup_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
