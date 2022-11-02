@@ -5,4 +5,21 @@
     <string name="splash_text">Найди свое\nИдеальное\nсовпадение\nСегодня</string>
     <string name="to_auth">Авторизоваться</string>
     <string name="to_signup">Зарегистрироваться</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="enter_to_continue">Войдите, чтобы продолжить</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="forgot_password">Забыл пароль?</string>
+    <string name="or">или</string>
+    <string name="signup_with_facebook">Зарегистрируйтесь через фейсбук</string>
+    <string name="signup_with_mail">Зарегистрируйтесь с эл. почтой</string>
+    <string name="policy">Условия пользования и\nполитика конфиденциальности</string>
+    <string name="to_create_account">Создать аккаунт</string>
+    <string name="create_account_to_continue">Создайте учетную запись, чтобы продолжить</string>
+    <string name="email_address">Адрес электронной почты</string>
+    <string name="repeat_password">Повторно введите пароль</string>
+    <string name="if_signup">Зарегистрируйтесь, вы согласны с нашими</string>
+    <string name="terms_of_use">условия использования</string>
+    <string name="already_have_account">Уже есть аккаунт?</string>
+    <string name="login">Войти</string>
 </resources>

@@ -1,25 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
     tools:context=".screens.AuthFragment">
 
     <ImageView
+        android:id="@+id/back_btn"
+        style="@style/back_btn"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/back_btn"
-        style="@style/back_btn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/back_btn"
-        app:layout_constraintBottom_toBottomOf="@id/back_btn"
-        android:text="@string/to_auth"
         android:id="@+id/auth_title"
-        style="@style/screen_title" />
+        style="@style/screen_title"
+        android:text="@string/to_auth"
+        app:layout_constraintBottom_toBottomOf="@id/back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_btn" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="@string/enter_to_continue"
+        android:textColor="@color/gray_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/welcome_title"
+        app:layout_constraintTop_toBottomOf="@id/welcome_title" />
+
+    <EditText
+        android:id="@+id/username_et"
+        style="@style/auth_input"
+        android:hint="@string/user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+
+    <EditText
+        android:id="@+id/password_et"
+        style="@style/auth_input"
+        android:layout_marginTop="24dp"
+        android:drawableEnd="@drawable/ic_eye"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_et" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        style="@style/bold_16sp"
+        android:text="@string/forgot_password"
+        app:layout_constraintStart_toStartOf="@id/password_et"
+        app:layout_constraintTop_toBottomOf="@id/password_et" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/auth_btn"
+        style="@style/btn_corner_32"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/pink_color"
+        android:text="@string/to_auth"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgot_password" />
+
+    <TextView
+        android:id="@+id/or"
+        style="@style/bold_16sp"
+        android:layout_marginTop="32dp"
+        android:text="@string/or"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auth_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/facebook_btn"
+        style="@style/btn_corner_32"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/facebook_color"
+        android:text="@string/signup_with_facebook"
+        android:textColor="@color/white"
+        android:drawablePadding="-32dp"
+        android:paddingStart="32dp"
+        android:drawableStart="@drawable/facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/or" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mail_btn"
+        android:text="@string/signup_with_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebook_btn"
+        style="@style/stroke_32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroy_medium"
+        android:textColor="@color/gray_color"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
