@@ -10,6 +10,7 @@
     <ImageView
         android:id="@+id/back_btn"
         style="@style/back_btn"
+        android:layout_marginTop="48dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

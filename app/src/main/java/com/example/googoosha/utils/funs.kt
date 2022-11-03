@@ -8,30 +8,20 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.googoosha.R
 
 fun replaceFragment(fragment: Fragment, backStack: Boolean = true) {
     if (backStack) {
         APP.supportFragmentManager.beginTransaction()
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             .replace(R.id.fragment_frame, fragment)
             .addToBackStack(null)
             .commit()
     } else {
         APP.supportFragmentManager.beginTransaction()
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             .replace(R.id.fragment_frame, fragment)
-            .commit()
-    }
-}
-
-fun mainReplaceFragment(fragment: Fragment, backStack: Boolean = true) {
-    if (backStack) {
-        APP.supportFragmentManager.beginTransaction()
-            .replace(R.id.main_frame, fragment)
-            .addToBackStack(null)
-            .commit()
-    } else {
-        APP.supportFragmentManager.beginTransaction()
-            .replace(R.id.main_frame, fragment)
             .commit()
     }
 }
@@ -39,11 +29,13 @@ fun mainReplaceFragment(fragment: Fragment, backStack: Boolean = true) {
 fun authReplaceFragment(fragment: Fragment, backStack: Boolean = true) {
     if (backStack) {
         AUTH.supportFragmentManager.beginTransaction()
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             .replace(R.id.auth_frame, fragment)
             .addToBackStack(null)
             .commit()
     } else {
         AUTH.supportFragmentManager.beginTransaction()
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             .replace(R.id.auth_frame, fragment)
             .commit()
     }

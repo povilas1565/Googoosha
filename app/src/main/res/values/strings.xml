@@ -39,4 +39,8 @@
     <string name="born_date">Дата рождения</string>
     <string name="message">Сообщение</string>
     <string name="to_find">Обнаружить</string>
+    <string name="notifications">Уведомления</string>
+    <string name="request_for_compliance">Запрос соответствия</string>
+    <string name="to_accept">Принять</string>
+    <string name="enter_message_there">Введите сообщение здесь</string>
 </resources>
