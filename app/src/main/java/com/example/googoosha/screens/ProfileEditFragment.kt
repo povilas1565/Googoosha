@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.googoosha.databinding.FragmentAuthBinding
+import com.example.googoosha.databinding.FragmentProfileEditBinding
 
 class ProfileEditFragment : Fragment() {
-    private lateinit var binding: FragmentAuthBinding
+    private lateinit var binding: FragmentProfileEditBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAuthBinding.inflate(inflater, container, false)
+        binding = FragmentProfileEditBinding.inflate(inflater, container, false)
         return binding.root
     }
 

@@ -5,9 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.googoosha.databinding.FragmentAuthBinding
 import com.example.googoosha.databinding.FragmentSplashBinding
-import com.example.googoosha.utils.replaceFragment
+import com.example.googoosha.utils.authReplaceFragment
 
 class SplashFragment : Fragment() {
     private lateinit var binding: FragmentSplashBinding
@@ -27,10 +26,10 @@ class SplashFragment : Fragment() {
 
     private fun initFuns() {
         binding.authBtn.setOnClickListener {
-            replaceFragment(AuthFragment(), false)
+            authReplaceFragment(AuthFragment(), false)
         }
         binding.signupBtn.setOnClickListener {
-            replaceFragment(SignupFragment(), false)
+            authReplaceFragment(SignupFragment(), false)
         }
     }
 }

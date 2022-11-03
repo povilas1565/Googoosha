@@ -10,6 +10,7 @@
     <LinearLayout
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
+        android:background="@color/bg_color"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,6 +20,7 @@
         <ImageView
             android:id="@+id/home"
             android:layout_width="match_parent"
+            app:tint="@color/gray_color"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="12dp"
@@ -28,6 +30,7 @@
             android:id="@+id/favourites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tint="@color/gray_color"
             android:layout_weight="1"
             android:padding="12dp"
             android:src="@drawable/heart" />
@@ -41,6 +44,7 @@
             android:id="@+id/chats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tint="@color/gray_color"
             android:layout_weight="1"
             android:padding="12dp"
             android:src="@drawable/chat" />

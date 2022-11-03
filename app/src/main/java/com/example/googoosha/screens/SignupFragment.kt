@@ -1,12 +1,14 @@
 package com.example.googoosha.screens
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.googoosha.databinding.FragmentAuthBinding
+import com.example.googoosha.MainActivity
 import com.example.googoosha.databinding.FragmentSignupBinding
+import com.example.googoosha.utils.AUTH
 
 class SignupFragment : Fragment() {
     private lateinit var binding: FragmentSignupBinding
@@ -25,6 +27,9 @@ class SignupFragment : Fragment() {
     }
 
     private fun initFuns() {
-
+        binding.signupBtn.setOnClickListener {
+            startActivity(Intent(AUTH, MainActivity::class.java))
+            AUTH.finish()
+        }
     }
 }
