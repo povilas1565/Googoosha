@@ -13,6 +13,7 @@
         android:background="@color/bg_color"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:paddingBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -23,6 +24,9 @@
             app:tint="@color/gray_color"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:padding="12dp"
             android:src="@drawable/home" />
 
@@ -33,6 +37,9 @@
             app:tint="@color/gray_color"
             android:layout_weight="1"
             android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/heart" />
 
         <Space
@@ -47,6 +54,9 @@
             app:tint="@color/gray_color"
             android:layout_weight="1"
             android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/chat" />
 
         <ImageView
@@ -54,6 +64,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:padding="12dp"
             android:src="@drawable/profile"
             app:tint="@color/gray_color" />
@@ -62,9 +75,9 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/plus"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="-24dp"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="-28dp"
         app:cardBackgroundColor="@color/pink_color"
         app:cardCornerRadius="100dp"
         app:cardElevation="12dp"

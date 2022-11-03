@@ -1,5 +1,12 @@
 package com.example.googoosha.utils
 
+import android.app.Activity
+import android.graphics.Color
+import android.os.Build
+import android.view.View
+import android.view.Window
+import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.googoosha.R
 
@@ -40,4 +47,25 @@ fun authReplaceFragment(fragment: Fragment, backStack: Boolean = true) {
             .replace(R.id.auth_frame, fragment)
             .commit()
     }
+}
+
+fun setFullWindow(activity: AppCompatActivity) {
+    if (Build.VERSION.SDK_INT in 19..20) {
+        setWindowFlag(activity, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true)
+    }
+    activity.window.decorView.systemUiVisibility =
+        View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+    setWindowFlag(activity, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false)
+    activity.window.statusBarColor = Color.TRANSPARENT
+}
+
+private fun setWindowFlag(activity: Activity, bits: Int, on: Boolean) {
+    val win: Window = activity.window
+    val winParams: WindowManager.LayoutParams = win.attributes
+    if (on) {
+        winParams.flags = winParams.flags or bits
+    } else {
+        winParams.flags = winParams.flags and bits.inv()
+    }
+    win.attributes = winParams
 }

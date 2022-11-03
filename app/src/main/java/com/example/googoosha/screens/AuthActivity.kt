@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.googoosha.databinding.ActivityAuthBinding
 import com.example.googoosha.utils.AUTH
 import com.example.googoosha.utils.authReplaceFragment
+import com.example.googoosha.utils.setFullWindow
 
 class AuthActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAuthBinding
@@ -17,6 +18,7 @@ class AuthActivity : AppCompatActivity() {
 
     private fun initFields() {
         AUTH = this
+        setFullWindow(this)
         authReplaceFragment(SplashFragment(), false)
     }
 }

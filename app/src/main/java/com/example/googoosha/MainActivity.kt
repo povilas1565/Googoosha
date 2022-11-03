@@ -10,6 +10,7 @@ import com.example.googoosha.screens.HomeFragment
 import com.example.googoosha.screens.ProfileFragment
 import com.example.googoosha.utils.APP
 import com.example.googoosha.utils.replaceFragment
+import com.example.googoosha.utils.setFullWindow
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -42,6 +43,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initFields() {
         APP = this
+        setFullWindow(this)
         replaceFragment(ProfileFragment(), false)
         fillItem(binding.profile)
     }
