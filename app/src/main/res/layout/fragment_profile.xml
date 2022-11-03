@@ -24,7 +24,7 @@
             android:src="@drawable/ic_back" />
 
         <TextView
-            android:id="@+id/auth_title"
+            android:id="@+id/title"
             style="@style/screen_title"
             android:layout_width="match_parent"
             android:layout_weight="1"

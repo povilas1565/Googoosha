@@ -37,4 +37,6 @@
     <string name="phone">Телефон</string>
     <string name="location">Локация</string>
     <string name="born_date">Дата рождения</string>
+    <string name="message">Сообщение</string>
+    <string name="to_find">Обнаружить</string>
 </resources>
