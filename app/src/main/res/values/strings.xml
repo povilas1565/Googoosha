@@ -86,4 +86,15 @@
     <string name="gifts">Подарки</string>
     <string name="your_balance">Ваш баланс: 150</string>
     <string name="to_replenish">Пополнить</string>
+    <string name="exit">Выйти</string>
+    <string name="coincidence">Совпадение</string>
+    <string name="to_send_message">Отправить сообщение</string>
+    <string name="contionue_play">Продолжай играть</string>
+    <string name="start_chatting">Начать разговор друг с другом прямо сейчас</string>
+    <string name="its_coincidence">Поздравляю, это совпадение</string>
+    <string name="info_example">Здравствуйте, я Джейсон Момоа, дизайнер-фрилансер из Сан-Франциско, штат Луизиана. Я живу в США последние 10 лет и работаю</string>
+    <string name="interested">Интересы</string>
+    <string name="films">Фильмы</string>
+    <string name="travel">Путешествие</string>
+    <string name="food">Еда</string>
 </resources>

@@ -5,56 +5,230 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pink_gradient"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".screens.MenuFragment">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginStart="16dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="200dp"/>
-
-    <TextView
-        style="@style/screen_title"
-        android:text="@string/profile_example"
-        android:layout_width="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp"
-        android:gravity="center_vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="200dp" />
 
         <TextView
-            android:fontFamily="@font/gilroy_medium"
-            android:layout_marginStart="16dp"
-            android:textSize="14sp"
-            android:textColor="@color/white"
-            android:text="@string/your_balance"
+            style="@style/screen_title"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/profile_example"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="@string/your_balance"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/coin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="@string/to_replenish"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vip_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vip_icon" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginStart="12dp"
+                android:text="@string/vip_status"
+                android:textColor="@color/white" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_icon" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginStart="12dp"
+                android:text="@string/profile"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message_icon" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginStart="12dp"
+                android:text="@string/message"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notify_icon" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginStart="12dp"
+                android:text="@string/notifications"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favourites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favourites_icon" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginStart="12dp"
+                android:text="@string/favourites"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settings_icon" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginStart="12dp"
+                android:text="@string/settings"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/exit_icon" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginStart="12dp"
+                android:text="@string/exit"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="305dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="64dp"
+        android:layout_marginStart="32dp">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/coin"
-            android:layout_marginStart="8dp"/>
-
-        <TextView
-            android:fontFamily="@font/gilroy_medium"
-            android:layout_marginStart="16dp"
-            android:textSize="10sp"
-            android:textColor="@color/white"
-            android:text="@string/to_replenish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:ignore="SmallSp" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/slide_image" />
 
     </LinearLayout>
 

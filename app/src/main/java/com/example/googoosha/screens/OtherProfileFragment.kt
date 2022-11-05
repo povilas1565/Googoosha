@@ -6,21 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.googoosha.R
-import com.example.googoosha.databinding.FragmentHelpBinding
-import com.example.googoosha.databinding.FragmentVipBinding
+import com.example.googoosha.databinding.*
 
-class HelpFragment : Fragment() {
-   private lateinit var binding: FragmentHelpBinding
+class OtherProfileFragment : Fragment() {
+    private lateinit var binding: FragmentOtherProfileBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHelpBinding.inflate(inflater, container, false)
+        binding = FragmentOtherProfileBinding.inflate(inflater, container ,false)
         return binding.root
     }
 
     override fun onResume() {
         super.onResume()
     }
+
 }
