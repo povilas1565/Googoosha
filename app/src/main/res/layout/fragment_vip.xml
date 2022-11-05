@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".screens.VipFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/screen_title"
+            android:layout_marginEnd="32dp"
+            android:text="@string/vip_status" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile_image"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="0dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vip"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/bold_16sp"
+        android:textSize="14sp"
+        android:textColor="@color/vip_title_color"
+        android:layout_marginTop="48dp"
+        android:gravity="start"
+        android:layout_marginEnd="16dp"
+        android:text="@string/vip_title"/>
+
+    <TextView
+        style="@style/medium_16"
+        android:textSize="14sp"
+        android:textColor="@color/gray_color"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="start"
+        android:text="Оформление вашей анкеты эффектным знаком VIP в результатах поиска, списках друзей, гостей и в Вашем профиле."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/welcome_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="@string/to_create_account"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="@string/create_account_to_continue"
+            android:textColor="@color/gray_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/username_et"
+            style="@style/auth_input"
+            android:hint="@string/user_name" />
+
+        <EditText
+            android:id="@+id/mail_et"
+            style="@style/auth_input"
+            android:layout_marginTop="24dp"
+            android:hint="@string/email_address" />
+
+        <EditText
+            android:id="@+id/password_et"
+            style="@style/auth_input"
+            android:layout_marginTop="24dp"
+            android:drawableEnd="@drawable/ic_eye"
+            android:hint="@string/password" />
+
+        <EditText
+            android:id="@+id/repeat_password_et"
+            style="@style/auth_input"
+            android:layout_marginTop="24dp"
+            android:drawableEnd="@drawable/ic_eye"
+            android:hint="@string/repeat_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup_btn"
+            style="@style/btn_corner_32"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/pink_color"
+            android:text="@string/to_signup"
+            android:textColor="@color/white" />
+
+        <TextView
+            style="@style/bold_16sp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center"
+            android:text="@string/if_signup" />
+
+        <TextView
+            android:id="@+id/policy"
+            style="@style/bold_16sp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center"
+            android:text="@string/terms_of_use"
+            android:textColor="@color/pink_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

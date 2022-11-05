@@ -10,6 +10,7 @@
     <color name="white_text_color">#F2F2F2</color>
     <color name="input_text_color">#D6D9E4</color>
     <color name="message_input_color">#45D6D9E4</color>
+    <color name="vip_title_color">#282E35</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

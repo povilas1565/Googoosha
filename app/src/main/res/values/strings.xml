@@ -43,4 +43,6 @@
     <string name="request_for_compliance">Запрос соответствия</string>
     <string name="to_accept">Принять</string>
     <string name="enter_message_there">Введите сообщение здесь</string>
+    <string name="vip_status">VIP-статус</string>
+    <string name="vip_title">Откройте полный функционал вместе с VIP подпиской:</string>
 </resources>
