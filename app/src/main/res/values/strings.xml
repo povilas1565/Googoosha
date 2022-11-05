@@ -84,4 +84,6 @@
     <string name="delete_questionnaire">Удаление анкеты</string>
     <string name="with_possibility_recovering">С возможностью восстановления</string>
     <string name="gifts">Подарки</string>
+    <string name="your_balance">Ваш баланс: 150</string>
+    <string name="to_replenish">Пополнить</string>
 </resources>

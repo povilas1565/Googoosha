@@ -21,21 +21,72 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center">
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="164dp"
                 android:layout_height="164dp"
+                android:layout_marginBottom="84dp"
                 app:cardCornerRadius="200dp"
                 app:cardElevation="0dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"   fdfdfFDFffdfdf
+                    android:scaleType="centerCrop"
                     android:src="@drawable/call_image" />
 
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/bold_16sp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="12dp"
+                android:text="Jenifer Martin"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                style="@style/medium_16"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="84dp"
+                android:text="03.00 мин"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="84dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call_micro" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginHorizontal="24dp"
+                    app:cardBackgroundColor="@color/call_phone_color"
+                    app:cardCornerRadius="200dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/call_phone" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call_speaker" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
