@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".screens.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/screen_title"
+            android:layout_marginEnd="32dp"
+            android:text="@string/settings" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/bold_16sp"
+        android:text="@string/appearance"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/color_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/color_theme"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/bold_16sp"
+        android:text="@string/persone_data"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/name_edit"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/city_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/city_edit"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/bold_16sp"
+        android:text="@string/safety"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/password_edit"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/phone_edit"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recovery_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/recovery_password"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lasts_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/lasts_list"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/bold_16sp"
+        android:text="@string/el_address"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/verify_email"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/verify_address"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/bold_16sp"
+        android:text="@string/notifications"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/notifications_settings"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/notifications_settings"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notifications_to_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/notifications_to_email"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/to_filter_incoming_messages"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/bold_16sp"
+        android:text="@string/delete_questionnaire"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/with_recovering"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/with_possibility_recovering"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+</LinearLayout>
