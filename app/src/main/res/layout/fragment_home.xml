@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg_color"
     android:orientation="vertical"
     tools:context=".screens.HomeFragment">
@@ -46,16 +47,234 @@
             android:src="@drawable/filter" />
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:gravity="center"
         android:layout_width="match_parent"
-        tools:listitem="@layout/item_find"
-        android:layout_marginTop="16dp"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_3"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_4"/>
+
+    </LinearLayout>
 
     <View
+        android:id="@+id/alpha_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:alpha="0.4"
         android:background="@color/black"
-        android:alpha="0.4"/>
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-32dp"
+        android:background="@drawable/corner_32"
+        android:backgroundTint="@color/bg_color"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_cross"
+                app:tint="@color/black" />
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_weight="1"
+                android:paddingStart="64dp"
+                android:text="@string/filters" />
+
+            <TextView
+                style="@style/medium_16"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/to_clear"
+                android:textColor="@color/gray_color" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/screen_title"
+            android:layout_marginTop="28dp"
+            android:gravity="start"
+            android:text="@string/location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/location_example"
+                android:textColor="@color/gray_color" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:src="@drawable/next"
+                app:tint="@color/gray_color" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/screen_title"
+            android:layout_marginTop="28dp"
+            android:gravity="start"
+            android:text="@string/distance" />
+
+        <TextView
+            style="@style/screen_title"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="end"
+            android:text="10м - 200м"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            style="@style/screen_title"
+            android:layout_marginTop="28dp"
+            android:gravity="start"
+            android:text="@string/age" />
+
+        <TextView
+            style="@style/screen_title"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="end"
+            android:text="18 - 50 лет"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/screen_title"
+            android:layout_marginTop="28dp"
+            android:gravity="start"
+            android:text="Увлекающийся" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/corner_32"
+                android:backgroundTint="@color/pink_color"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp"
+                android:text="@string/man"
+                android:textColor="@color/white_text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/stroke_corner_32"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp"
+                android:text="@string/women"
+                android:textColor="@color/gray_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/stroke_corner_32"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp"
+                android:text="@string/general"
+                android:textColor="@color/gray_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginEnd="32dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/notifiocations_sound" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/btn_corner_32"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="56dp"
+            android:paddingVertical="12dp"
+            android:text="@string/to_save_edits"
+            android:textColor="@color/white_text_color" />
+
+    </LinearLayout>
 
 </LinearLayout>

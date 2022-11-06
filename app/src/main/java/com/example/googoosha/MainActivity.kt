@@ -1,19 +1,18 @@
 package com.example.googoosha
 
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.googoosha.databinding.ActivityMainBinding
-import com.example.googoosha.screens.ChatsFragment
-import com.example.googoosha.screens.FavouritesFragment
-import com.example.googoosha.screens.HomeFragment
-import com.example.googoosha.screens.ProfileFragment
+import com.example.googoosha.screens.*
 import com.example.googoosha.utils.APP
+import com.example.googoosha.utils.mainReplaceFragment
 import com.example.googoosha.utils.replaceFragment
 import com.example.googoosha.utils.setFullWindow
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -44,8 +43,7 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         APP = this
         setFullWindow(this)
-        replaceFragment(ProfileFragment(), false)
-        fillItem(binding.profile)
+        mainReplaceFragment(MainFragment(), false)
     }
 
     private fun fillItem(view: ImageView) {

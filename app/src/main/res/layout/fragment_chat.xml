@@ -80,10 +80,19 @@
             android:src="@drawable/menu_dots" />
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat_example"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -118,7 +127,7 @@
             android:layout_weight="1"
             android:background="@null"
             android:gravity="start"
-            android:text="@string/enter_message_there"
+            android:hint="@string/enter_message_there"
             android:textColor="@color/gray_color" />
 
         <androidx.cardview.widget.CardView

@@ -97,4 +97,17 @@
     <string name="films">Фильмы</string>
     <string name="travel">Путешествие</string>
     <string name="food">Еда</string>
+    <string name="filters">Фильтры</string>
+    <string name="to_clear">Очистить</string>
+    <string name="type">Тип</string>
+    <string name="flowers">Цветы</string>
+    <string name="price">Цена</string>
+    <string name="for_who_gift">Кому нужен подарок?</string>
+    <string name="man">Мужчина</string>
+    <string name="women">Women</string>
+    <string name="general">Общий</string>
+    <string name="to_save_edits">Сохранить изменения</string>
+    <string name="distance">Расстояние</string>
+    <string name="notifiocations_sound">Звук уведомления</string>
+    <string name="age">Возраст</string>
 </resources>

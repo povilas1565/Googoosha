@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.googoosha.R
 import com.example.googoosha.databinding.FragmentChatsBinding
 import com.example.googoosha.databinding.FragmentHomeBinding
+import com.example.googoosha.utils.replaceFragment
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -22,6 +23,17 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        initFuns()
+    }
+
+    private fun initFuns() {
+        binding.notifyBtn.setOnClickListener {
+            replaceFragment(NotificationsFragment())
+        }
+        binding.filterBtn.setOnClickListener {
+            binding.alphaBg.visibility = View.VISIBLE
+            binding.filterView.visibility = View.VISIBLE
+        }
     }
 
 }

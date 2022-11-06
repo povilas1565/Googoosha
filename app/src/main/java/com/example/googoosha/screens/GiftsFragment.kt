@@ -23,6 +23,14 @@ class GiftsFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        initFuns()
+    }
+
+    private fun initFuns() {
+        binding.filterBtn.setOnClickListener {
+            binding.alphaBg.visibility = View.VISIBLE
+            binding.filterView.visibility = View.VISIBLE
+        }
     }
 
 }

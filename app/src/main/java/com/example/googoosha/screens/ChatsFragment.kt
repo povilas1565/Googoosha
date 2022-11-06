@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.googoosha.R
 import com.example.googoosha.databinding.FragmentChatsBinding
+import com.example.googoosha.utils.mainReplaceFragment
 
 class ChatsFragment : Fragment() {
    private lateinit var binding: FragmentChatsBinding
@@ -21,6 +22,13 @@ class ChatsFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        initFuns()
+    }
+
+    private fun initFuns() {
+        binding.chatExample.setOnClickListener {
+            mainReplaceFragment(ChatFragment())
+        }
     }
 
 }

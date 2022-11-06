@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg_color"
     android:orientation="vertical"
     tools:context=".screens.ChatsFragment">
@@ -46,10 +47,106 @@
             android:src="@drawable/menu_dots" />
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="16dp"
-        tools:listitem="@layout/item_message"
-        android:layout_height="match_parent"/>
+        android:id="@+id/chat_example"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/item_image"
+            app:layout_constraintTop_toTopOf="@id/item_image" />
+
+        <TextView
+            android:id="@+id/item_date"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="5д наз."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image" />
+
+        <TextView
+            android:id="@+id/item_text"
+            style="@style/bold_16sp"
+            android:layout_marginTop="8dp"
+            android:text="приятно познакомиться, ты классный"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toStartOf="@id/item_date"
+            app:layout_constraintStart_toEndOf="@id/item_image"
+            app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image2"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name2"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/item_image2"
+            app:layout_constraintTop_toTopOf="@id/item_image2" />
+
+        <TextView
+            android:id="@+id/item_date2"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="5д наз."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image2" />
+
+        <TextView
+            android:id="@+id/item_text2"
+            style="@style/bold_16sp"
+            android:layout_marginTop="8dp"
+            android:text="приятно познакомиться, ты классный"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toStartOf="@id/item_date2"
+            app:layout_constraintStart_toEndOf="@id/item_image2"
+            app:layout_constraintTop_toBottomOf="@id/item_name2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

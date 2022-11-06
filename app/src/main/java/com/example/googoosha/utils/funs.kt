@@ -12,6 +12,25 @@ import androidx.fragment.app.FragmentTransaction
 import com.example.googoosha.R
 
 fun replaceFragment(fragment: Fragment, backStack: Boolean = true) {
+    APP.binding.bottomNav.visibility = View.VISIBLE
+    APP.binding.plus.visibility = View.VISIBLE
+    if (backStack) {
+        APP.supportFragmentManager.beginTransaction()
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+            .replace(R.id.fragment_frame, fragment)
+            .addToBackStack(null)
+            .commit()
+    } else {
+        APP.supportFragmentManager.beginTransaction()
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+            .replace(R.id.fragment_frame, fragment)
+            .commit()
+    }
+}
+
+fun mainReplaceFragment(fragment: Fragment, backStack: Boolean = true) {
+    APP.binding.bottomNav.visibility = View.GONE
+    APP.binding.plus.visibility = View.GONE
     if (backStack) {
         APP.supportFragmentManager.beginTransaction()
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
@@ -60,4 +79,9 @@ private fun setWindowFlag(activity: Activity, bits: Int, on: Boolean) {
         winParams.flags = winParams.flags and bits.inv()
     }
     win.attributes = winParams
+}
+
+fun hideBottomNav() {
+    APP.binding.bottomNav.visibility = View.GONE
+    APP.binding.plus.visibility = View.GONE
 }

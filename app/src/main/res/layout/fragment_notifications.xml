@@ -47,13 +47,180 @@
             android:src="@drawable/filter" />
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/notifications_list"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name3"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/item_image3"
+            app:layout_constraintStart_toEndOf="@id/item_image3"
+            app:layout_constraintTop_toTopOf="@id/item_image3" />
+
+        <TextView
+            android:id="@+id/item_text3"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="Отправил запрос"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name3"
+            app:layout_constraintEnd_toStartOf="@id/item_date3"
+            app:layout_constraintStart_toEndOf="@id/item_name3"
+            app:layout_constraintTop_toTopOf="@id/item_name3" />
+
+        <TextView
+            android:id="@+id/item_date3"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="4 часа наз."
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_name3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_weight="1"
-        tools:listitem="@layout/item_notification" />
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name2"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/item_image2"
+            app:layout_constraintStart_toEndOf="@id/item_image2"
+            app:layout_constraintTop_toTopOf="@id/item_image2" />
+
+        <TextView
+            android:id="@+id/item_text2"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="Отправил запрос"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name2"
+            app:layout_constraintEnd_toStartOf="@id/item_date2"
+            app:layout_constraintStart_toEndOf="@id/item_name2"
+            app:layout_constraintTop_toTopOf="@id/item_name2" />
+
+        <TextView
+            android:id="@+id/item_date2"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="4 часа наз."
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_name2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name4"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/item_image4"
+            app:layout_constraintStart_toEndOf="@id/item_image4"
+            app:layout_constraintTop_toTopOf="@id/item_image4" />
+
+        <TextView
+            android:id="@+id/item_text4"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="Отправил запрос"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name4"
+            app:layout_constraintEnd_toStartOf="@id/item_date4"
+            app:layout_constraintStart_toEndOf="@id/item_name4"
+            app:layout_constraintTop_toTopOf="@id/item_name4" />
+
+        <TextView
+            android:id="@+id/item_date4"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="4 часа наз."
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_name4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         style="@style/bold_16sp"
@@ -61,12 +228,182 @@
         android:layout_weight="0"
         android:text="@string/request_for_compliance" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/requests_list"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginTop="24dp"
-        android:layout_weight="1"
-        tools:listitem="@layout/item_request_compliance" />
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name5"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/item_image5"
+            app:layout_constraintStart_toEndOf="@id/item_image5"
+            app:layout_constraintTop_toTopOf="@id/item_image5" />
+
+        <TextView
+            android:id="@+id/item_text5"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="Отправил вам запрос"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name5"
+            app:layout_constraintEnd_toStartOf="@id/accept_btn5"
+            app:layout_constraintStart_toEndOf="@id/item_name5"
+            app:layout_constraintTop_toTopOf="@id/item_name5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept_btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@drawable/corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:text="@string/to_accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image6"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name6"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/item_image6"
+            app:layout_constraintStart_toEndOf="@id/item_image6"
+            app:layout_constraintTop_toTopOf="@id/item_image6" />
+
+        <TextView
+            android:id="@+id/item_text6"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="Отправил вам запрос"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name6"
+            app:layout_constraintEnd_toStartOf="@id/accept_btn6"
+            app:layout_constraintStart_toEndOf="@id/item_name6"
+            app:layout_constraintTop_toTopOf="@id/item_name6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept_btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@drawable/corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:text="@string/to_accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="Jenifier Martin"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/item_image"
+            app:layout_constraintStart_toEndOf="@id/item_image"
+            app:layout_constraintTop_toTopOf="@id/item_image" />
+
+        <TextView
+            android:id="@+id/item_text"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="Отправил вам запрос"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name"
+            app:layout_constraintEnd_toStartOf="@id/accept_btn"
+            app:layout_constraintStart_toEndOf="@id/item_name"
+            app:layout_constraintTop_toTopOf="@id/item_name" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@drawable/corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:text="@string/to_accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
