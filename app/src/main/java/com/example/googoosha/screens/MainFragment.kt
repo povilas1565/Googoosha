@@ -1,12 +1,11 @@
 package com.example.googoosha.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.googoosha.R
-import com.example.googoosha.databinding.*
+import androidx.fragment.app.Fragment
+import com.example.googoosha.databinding.FragmentMainBinding
 import com.example.googoosha.utils.hideBottomNav
 import com.example.googoosha.utils.mainReplaceFragment
 import com.example.googoosha.utils.replaceFragment
@@ -18,7 +17,7 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMainBinding.inflate(inflater, container ,false)
+        binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
     }
 

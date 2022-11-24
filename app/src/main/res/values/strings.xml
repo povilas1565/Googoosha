@@ -108,4 +108,7 @@
     <string name="distance">Distance</string>
     <string name="notifiocations_sound">Notification Sound</string>
     <string name="age">Age</string>
+    <string name="friends">Друзья</string>
+    <string name="guests">Гости</string>
+    <string name="shop">Магазин</string>
 </resources>
