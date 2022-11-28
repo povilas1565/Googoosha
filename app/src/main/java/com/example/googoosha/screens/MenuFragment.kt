@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.example.googoosha.databinding.FragmentMenuBinding
 import com.example.googoosha.utils.APP
@@ -51,6 +52,21 @@ class MenuFragment : Fragment() {
         }
         binding.settings.setOnClickListener {
             mainReplaceFragment(SettingsFragment())
+        }
+        binding.guests.setOnClickListener {
+            replaceFragment(GuestsFragment())
+        }
+        binding.friends.setOnClickListener {
+            replaceFragment(FriendsFragment())
+        }
+        binding.help.setOnClickListener {
+            replaceFragment(HelpFragment())
+        }
+        binding.shop.setOnClickListener {
+            replaceFragment(GiftsFragment())
+        }
+        binding.themeBtn.setOnClickListener {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         }
         binding.exit.setOnClickListener {
             startActivity(Intent(APP, AuthActivity::class.java))

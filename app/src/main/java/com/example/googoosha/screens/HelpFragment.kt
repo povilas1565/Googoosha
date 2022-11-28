@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import com.example.googoosha.R
 import com.example.googoosha.databinding.FragmentHelpBinding
 import com.example.googoosha.databinding.FragmentVipBinding
+import com.example.googoosha.utils.mainReplaceFragment
+import com.example.googoosha.utils.replaceFragment
 
 class HelpFragment : Fragment() {
    private lateinit var binding: FragmentHelpBinding
@@ -22,5 +24,8 @@ class HelpFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        binding.safety.setOnClickListener {
+            mainReplaceFragment(SafetyFragment())
+        }
     }
 }

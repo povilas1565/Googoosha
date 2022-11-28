@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.googoosha.R
 import com.example.googoosha.databinding.FragmentSafetyBinding
 import com.example.googoosha.databinding.FragmentVipBinding
+import com.example.googoosha.utils.mainReplaceFragment
 
 class SafetyFragment : Fragment() {
    private lateinit var binding: FragmentSafetyBinding
@@ -22,5 +23,8 @@ class SafetyFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        binding.aboutPasswords.setOnClickListener {
+            mainReplaceFragment(AboutPasswordsFragment())
+        }
     }
 }
