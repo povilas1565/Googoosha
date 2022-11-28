@@ -51,6 +51,7 @@
         android:id="@+id/signup_btn"
         style="@style/btn_corner_32"
         android:text="@string/to_signup"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

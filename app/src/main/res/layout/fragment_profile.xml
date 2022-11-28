@@ -21,7 +21,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/ic_back"
+            app:tint="@color/black_text_color" />
 
         <TextView
             android:id="@+id/title"
@@ -58,7 +59,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="12dp"
         android:text="@string/profile_example"
-        android:textColor="@color/black" />
+        android:textColor="@color/black_text_color" />
 
     <TextView
         android:id="@+id/profile_location"

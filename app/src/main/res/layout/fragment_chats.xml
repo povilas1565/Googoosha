@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="12dp"
+            app:tint="@color/black_text_color"
             android:src="@drawable/ic_back" />
 
         <TextView
@@ -36,7 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:src="@drawable/search" />
+            android:src="@drawable/search"
+            app:tint="@color/black_text_color" />
 
         <ImageView
             android:id="@+id/menu_btn"
@@ -44,6 +46,7 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:layout_marginEnd="8dp"
+            app:tint="@color/black_text_color"
             android:src="@drawable/menu_dots" />
     </LinearLayout>
 
@@ -71,7 +74,7 @@
             style="@style/bold_16sp"
             android:layout_marginTop="0dp"
             android:text="Jenifier Martin"
-            android:textColor="@color/black"
+            android:textColor="@color/black_text_color"
             app:layout_constraintStart_toEndOf="@id/item_image"
             app:layout_constraintTop_toTopOf="@id/item_image" />
 
@@ -80,7 +83,7 @@
             style="@style/bold_16sp"
             android:layout_marginTop="0dp"
             android:text="5д наз."
-            android:textColor="@color/black"
+            android:textColor="@color/black_text_color"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/item_image" />
@@ -90,7 +93,7 @@
             style="@style/bold_16sp"
             android:layout_marginTop="8dp"
             android:text="приятно познакомиться, ты классный"
-            android:textColor="@color/black"
+            android:textColor="@color/black_text_color"
             android:textSize="12sp"
             android:layout_width="0dp"
             app:layout_constraintEnd_toStartOf="@id/item_date"
@@ -121,7 +124,7 @@
             style="@style/bold_16sp"
             android:layout_marginTop="0dp"
             android:text="Jenifier Martin"
-            android:textColor="@color/black"
+            android:textColor="@color/black_text_color"
             app:layout_constraintStart_toEndOf="@id/item_image2"
             app:layout_constraintTop_toTopOf="@id/item_image2" />
 
@@ -130,7 +133,7 @@
             style="@style/bold_16sp"
             android:layout_marginTop="0dp"
             android:text="5д наз."
-            android:textColor="@color/black"
+            android:textColor="@color/black_text_color"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/item_image2" />
@@ -140,7 +143,7 @@
             style="@style/bold_16sp"
             android:layout_marginTop="8dp"
             android:text="приятно познакомиться, ты классный"
-            android:textColor="@color/black"
+            android:textColor="@color/black_text_color"
             android:textSize="12sp"
             android:layout_width="0dp"
             app:layout_constraintEnd_toStartOf="@id/item_date2"

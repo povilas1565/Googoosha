@@ -35,10 +35,18 @@
                 android:textColor="@color/white" />
 
             <ImageView
-                android:id="@+id/theme_btn"
+                android:id="@+id/night_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="64dp"
+                android:src="@drawable/moon" />
+
+            <ImageView
+                android:id="@+id/light_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:visibility="gone"
                 android:src="@drawable/moon" />
 
         </LinearLayout>

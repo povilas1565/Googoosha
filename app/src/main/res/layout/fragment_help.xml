@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/bg_color"
+    android:orientation="vertical"
     tools:context=".screens.HelpFragment">
 
     <LinearLayout
@@ -19,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/ic_back"
+            app:tint="@color/black_text_color" />
 
         <TextView
             android:id="@+id/title"
@@ -29,222 +31,232 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/safety"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/safety"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/safety"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/guide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/guide"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/guide_for_beginners"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/friendship"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/friendship"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/friendship_chatting"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/replenishment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/replenishment"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/replenishment_balance"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/services"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/services"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/services"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/settings"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/profile_settings"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/photos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/photos"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/photos"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/rules"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rules"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/site_rules"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/user_agreement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/user_agreement"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/user_agreement"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/about_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/about_app"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp">
 
         <TextView
             style="@style/medium_16"
-            android:gravity="start"
             android:layout_weight="0.1"
+            android:gravity="start"
             android:text="@string/about_app"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/next" />
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
 
     </LinearLayout>
 

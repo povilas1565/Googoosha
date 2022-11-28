@@ -36,7 +36,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_goneMarginStart="16dp"
-            app:tint="@color/white" />
+            app:tint="@color/white_text_color" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gilroy_bold"
                     android:text="Shakila Mahmud, 25"
-                    android:textColor="@color/black"
+                    android:textColor="@color/black_text_color"
                     android:textSize="24sp" />
 
                 <TextView

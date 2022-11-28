@@ -13,7 +13,8 @@
         android:layout_marginTop="48dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black_text_color" />
 
     <TextView
         android:id="@+id/auth_title"
@@ -32,7 +33,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/gilroy_bold"
         android:text="@string/welcome"
-        android:textColor="@color/black"
+        android:textColor="@color/black_text_color"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/back_btn" />
@@ -101,7 +102,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/facebook_color"
         android:text="@string/signup_with_facebook"
-        android:textColor="@color/white"
+        android:textColor="@color/white_text_color"
         android:drawablePadding="-32dp"
         android:paddingStart="32dp"
         android:drawableStart="@drawable/facebook"

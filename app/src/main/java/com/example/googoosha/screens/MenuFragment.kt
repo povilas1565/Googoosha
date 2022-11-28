@@ -12,6 +12,7 @@ import com.example.googoosha.utils.APP
 import com.example.googoosha.utils.hideBottomNav
 import com.example.googoosha.utils.mainReplaceFragment
 import com.example.googoosha.utils.replaceFragment
+import java.util.Locale
 
 class MenuFragment : Fragment() {
     private lateinit var binding: FragmentMenuBinding
@@ -65,13 +66,44 @@ class MenuFragment : Fragment() {
         binding.shop.setOnClickListener {
             replaceFragment(GiftsFragment())
         }
-        binding.themeBtn.setOnClickListener {
+        binding.nightBtn.setOnClickListener {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            binding.nightBtn.visibility = View.GONE
+            binding.lightBtn.visibility = View.VISIBLE
+        }
+        binding.lightBtn.setOnClickListener {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            binding.nightBtn.visibility = View.VISIBLE
+            binding.lightBtn.visibility = View.GONE
         }
         binding.exit.setOnClickListener {
             startActivity(Intent(APP, AuthActivity::class.java))
             APP.finish()
         }
+        binding.englishBtn.setOnClickListener {
+            setLocale("en")
+        }
+        binding.russianBtn.setOnClickListener {
+            setLocale("ru")
+        }
+        binding.uzbekBtn.setOnClickListener {
+            setLocale("uz")
+        }
+        binding.turkishBtn.setOnClickListener {
+            setLocale("tr")
+        }
+    }
+
+    private fun setLocale(language: String) {
+        val locale = Locale(language)
+        var res = resources
+        var dm = res.displayMetrics
+        var conf = res.configuration
+        conf.locale = locale
+        res.updateConfiguration(conf, dm)
+        val intent = APP.intent
+        APP.finish()
+        startActivity(intent)
     }
 
 }
