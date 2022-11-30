@@ -217,7 +217,7 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="Приглашение на другой сайт (спам)"
+            android:text="@string/invite_to_site"
             android:textSize="15sp" />
 
         <ImageView

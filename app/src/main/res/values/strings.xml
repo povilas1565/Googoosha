@@ -112,4 +112,6 @@
     <string name="guests">Guests</string>
     <string name="shop">Shop</string>
     <string name="send">Send</string>
+    <string name="invite_to_site">Invitation to another site (spam)</string>
+    <string name="intersted_in">Intersted in</string>
 </resources>
