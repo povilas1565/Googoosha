@@ -108,4 +108,8 @@
     <string name="distance">Mesafe</string>
     <string name="notifiocations_sound">Bilgilendirme sesi</string>
     <string name="age">Yaş</string>
+    <string name="friends">Arkadaşlar</string>
+    <string name="guests">Misafirler</string>
+    <string name="shop">Puan</string>
+    <string name="send">Gönderme</string>
 </resources>

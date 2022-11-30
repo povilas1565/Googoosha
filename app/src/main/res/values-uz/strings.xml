@@ -108,4 +108,8 @@
     <string name="distance">Masofa</string>
     <string name="notifiocations_sound">ovozi</string>
     <string name="age">Yosh</string>
+    <string name="friends">Do\’stlar</string>
+    <string name="guests">Qiziquvchilar</string>
+    <string name="shop">Magazin</string>
+    <string name="send">Jo\’natish</string>
 </resources>
