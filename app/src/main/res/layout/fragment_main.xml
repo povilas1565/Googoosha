@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    tools:context=".screens.MainFragment">
+    tools:context=".screens.fragment.MainFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -200,7 +200,7 @@
             style="@style/screen_title"
             android:fontFamily="@font/gilroy_medium"
             android:gravity="end"
-            android:text="10м - 200м"
+            android:text="@string/_10_200"
             android:textSize="14sp" />
 
         <SeekBar
@@ -218,7 +218,7 @@
             style="@style/screen_title"
             android:fontFamily="@font/gilroy_medium"
             android:gravity="end"
-            android:text="18 - 50 лет"
+            android:text="@string/ages"
             android:textSize="14sp" />
 
         <SeekBar

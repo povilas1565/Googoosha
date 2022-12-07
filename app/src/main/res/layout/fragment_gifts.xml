@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    tools:context=".screens.GiftsFragment">
+    tools:context=".screens.fragment.GiftsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -176,7 +176,7 @@
             android:textSize="14sp"
             android:gravity="end"
             android:fontFamily="@font/gilroy_medium"
-            android:text="1 - 200" />
+            android:text="@string/_1_200" />
 
         <SeekBar
             android:layout_width="match_parent"

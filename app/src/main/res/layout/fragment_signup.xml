@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg_color"
     android:orientation="vertical"
-    tools:context=".screens.SignupFragment">
+    tools:context=".screens.fragment.SignupFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

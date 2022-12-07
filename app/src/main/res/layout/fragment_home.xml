@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg_color"
     android:orientation="vertical"
-    tools:context=".screens.HomeFragment">
+    tools:context=".screens.fragment.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -176,7 +176,7 @@
             style="@style/screen_title"
             android:fontFamily="@font/gilroy_medium"
             android:gravity="end"
-            android:text="10м - 200м"
+            android:text="@string/_10_200"
             android:textSize="14sp" />
 
         <SeekBar
@@ -194,7 +194,7 @@
             style="@style/screen_title"
             android:fontFamily="@font/gilroy_medium"
             android:gravity="end"
-            android:text="18 - 50 лет"
+            android:text="@string/ages"
             android:textSize="14sp" />
 
         <SeekBar
@@ -205,7 +205,7 @@
             style="@style/screen_title"
             android:layout_marginTop="28dp"
             android:gravity="start"
-            android:text="Увлекающийся" />
+            android:text="@string/intersted_in" />
 
         <LinearLayout
             android:layout_width="match_parent"

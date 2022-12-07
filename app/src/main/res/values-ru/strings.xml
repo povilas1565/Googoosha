@@ -9,8 +9,9 @@
     <string name="password">Пароль</string>
     <string name="forgot_password">Забыл пароль?</string>
     <string name="or">или</string>
-    <string name="signup_with_facebook">Зарегистрируйтесь через фейсбук</string>
-    <string name="signup_with_mail">Зарегистрируйтесь с эл. почтой</string>
+    <string name="signup_with_facebook">Зарегистрируйтесь через Фейсбук</string>
+    <string name="register_with_vk">Зарегистрируйтесь через Вкотакте</string>
+    <string name="register_with_google">Зарегистрируйтесь через Гугл-аккаунт</string>
     <string name="policy">Условия пользования и\nполитика конфиденциальности</string>
     <string name="to_create_account">Создать аккаунт</string>
     <string name="create_account_to_continue">Создайте учетную запись, чтобы продолжить</string>
@@ -22,7 +23,7 @@
     <string name="login">Войти</string>
     <string name="profile">Профиль</string>
     <string name="edit">Изменить</string>
-    <string name="profile_example">Jayson Moama, 34</string>
+    <string name="profile_example">Джейсон Момоа, 34 года</string>
     <string name="location_example">Сан-Франциско, США</string>
     <string name="subscribers">Подписчики</string>
     <string name="subscriptions">Подписки</string>
@@ -31,7 +32,7 @@
     <string name="info">Инфо</string>
     <string name="gallery">Галерея</string>
     <string name="to_save">Сохранять</string>
-    <string name="el_address">Эл. адрес</string>
+    <string name="el_address">Электронный адрес</string>
     <string name="phone">Телефон</string>
     <string name="location">Локация</string>
     <string name="born_date">Дата рождения</string>
@@ -114,4 +115,23 @@
     <string name="send">Отправить</string>
     <string name="invite_to_site">Приглашение на другой сайт (спам)</string>
     <string name="intersted_in">Увлекающийся</string>
+    <string name="jennifer_martin">Джениффер Мартин</string>
+    <string name="_03_00">03.00 мин</string>
+    <string name="online">Онлайн</string>
+    <string name="five">5 дней назад</string>
+    <string name="item_text">Приятно познакомиться, ты классный</string>
+    <string name="Nastya">Настя</string>
+    <string name="delete">Удалить из друзей</string>
+    <string name="_1_200">1 - 200</string>
+    <string name="_10_200">10м - 200м</string>
+    <string name="ages">18 - 50 лет</string>
+    <string name="send_request">Отправил запрос</string>
+    <string name="four">4 часа наз.</string>
+    <string name="shakila_mahmud_25">Шакила Махмуд, 25 лет</string>
+    <string name="student">Студент Оскфордского университета</string>
+    <string name="jayson_doe">Джейсон Доу</string>
+    <string name="email">JaysonDoe@mgail.com</string>
+    <string name="phone_etc">+882 114 225 222</string>
+    <string name="new_york_san_fransico">Нью-Йорк Сан-Франциско</string>
+    <string name="born_date_et">20-02-1998</string>
 </resources>

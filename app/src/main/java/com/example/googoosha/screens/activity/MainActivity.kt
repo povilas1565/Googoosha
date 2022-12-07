@@ -1,11 +1,11 @@
-package com.example.googoosha
+package com.example.googoosha.screens.activity
 
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.googoosha.R
 import com.example.googoosha.databinding.ActivityMainBinding
-import com.example.googoosha.screens.*
+import com.example.googoosha.screens.fragment.*
 import com.example.googoosha.utils.APP
 import com.example.googoosha.utils.mainReplaceFragment
 import com.example.googoosha.utils.replaceFragment

@@ -1,8 +1,9 @@
-package com.example.googoosha.screens
+package com.example.googoosha.screens.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.googoosha.databinding.ActivityAuthBinding
+import com.example.googoosha.screens.fragment.SplashFragment
 import com.example.googoosha.utils.AUTH
 import com.example.googoosha.utils.authReplaceFragment
 import com.example.googoosha.utils.setFullWindow

@@ -1,4 +1,4 @@
-package com.example.googoosha.screens
+package com.example.googoosha.screens.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

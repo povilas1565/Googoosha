@@ -7,7 +7,7 @@
     android:background="@color/bg_color"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".screens.ProfileEditFragment">
+    tools:context=".screens.fragment.ProfileEditFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
 
     <EditText
         android:id="@+id/username_et"
-        android:text="Jayson Doe"
+        android:text="@string/jayson_doe"
         style="@style/profile_field_input" />
 
     <TextView
@@ -72,7 +72,7 @@
 
     <EditText
         android:id="@+id/mail_et"
-        android:text="JaysonDoe@mgail.com"
+        android:text="@string/email"
         style="@style/profile_field_input" />
 
     <TextView
@@ -83,7 +83,7 @@
 
     <EditText
         android:id="@+id/phone_et"
-        android:text="+882 114 225 222"
+        android:text="@string/phone_etc"
         style="@style/profile_field_input" />
 
     <TextView
@@ -94,7 +94,7 @@
 
     <EditText
         android:id="@+id/location_et"
-        android:text="New york San fransico"
+        android:text="@string/new_york_san_fransico"
         style="@style/profile_field_input" />
 
     <TextView
@@ -105,7 +105,7 @@
 
     <EditText
         android:id="@+id/born_date_et"
-        android:text="20-02-1998"
+        android:text="@string/born_date_et"
         style="@style/profile_field_input" />
 
 </LinearLayout>

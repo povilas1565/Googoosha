@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    tools:context=".screens.AuthFragment">
+    tools:context=".screens.fragment.AuthFragment">
 
     <ImageView
         android:id="@+id/back_btn"
@@ -78,18 +78,19 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/auth_btn"
         style="@style/btn_corner_32"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/pink_color"
         android:text="@string/to_auth"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/forgot_password" />
 
     <TextView
         android:id="@+id/or"
         style="@style/bold_16sp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/or"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,36 +100,59 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/facebook_btn"
         style="@style/btn_corner_32"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="@color/facebook_color"
-        android:text="@string/signup_with_facebook"
-        android:textColor="@color/white_text_color"
+        android:drawableStart="@drawable/facebook"
         android:drawablePadding="-32dp"
         android:paddingStart="32dp"
-        android:drawableStart="@drawable/facebook"
+        android:text="@string/signup_with_facebook"
+        android:textColor="@color/white_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/or" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/mail_btn"
-        android:text="@string/signup_with_mail"
+        android:id="@+id/vkontakte_btn"
+        style="@style/btn_corner_32"
+        android:layout_width="370dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/vkontakte_color"
+        android:drawableStart="@drawable/vkontakte"
+        android:drawablePadding="-32dp"
+        android:paddingStart="32dp"
+        android:text="@string/register_with_vk"
+        android:textColor="@color/white_text_color"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/facebook_btn"
-        style="@style/stroke_32dp" />
+        app:layout_constraintTop_toBottomOf="@id/or" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/google_btn"
+        style="@style/stroke_32dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/google_color"
+        android:drawableStart="@drawable/google"
+        android:text="@string/register_with_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vkontakte_btn" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/policy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="12sp"
-        android:fontFamily="@font/gilroy_medium"
-        android:textColor="@color/gray_color"
-        android:gravity="center"
         android:layout_marginBottom="16dp"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:fontFamily="@font/gilroy_medium"
+        android:gravity="center"
+        android:text="@string/policy"
+        android:textColor="@color/gray_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

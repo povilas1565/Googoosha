@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_color"
     android:orientation="vertical"
-    tools:context=".screens.ChatFragment">
+    tools:context=".screens.fragment.ChatFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:text="Jenifer Martin" />
+                android:text="@string/jennifer_martin" />
 
             <TextView
                 android:id="@+id/online"
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:text="Онлайн"
+                android:text="@string/online"
                 android:textColor="@color/gray_color" />
 
 
