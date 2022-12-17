@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.googoosha.databinding.FragmentAboutPasswordsBinding
+import com.example.googoosha.databinding.FragmentEmailAlertsBinding
 
-class AboutPasswordsFragment : Fragment() {
-    private lateinit var binding: FragmentAboutPasswordsBinding
+class EmailAlertsFragment : Fragment() {
+    private lateinit var binding: FragmentEmailAlertsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAboutPasswordsBinding.inflate(inflater, container, false)
+        binding = FragmentEmailAlertsBinding.inflate(inflater, container, false)
         return binding.root
     }
 

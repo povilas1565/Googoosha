@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.googoosha.databinding.FragmentAboutPasswordsBinding
+import com.example.googoosha.databinding.FragmentListOfRecentBinding
 
-class AboutPasswordsFragment : Fragment() {
-    private lateinit var binding: FragmentAboutPasswordsBinding
+class ListOfRecentFragment : Fragment() {
+    private lateinit var binding: FragmentListOfRecentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAboutPasswordsBinding.inflate(inflater, container, false)
+        binding = FragmentListOfRecentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -22,3 +22,4 @@ class AboutPasswordsFragment : Fragment() {
         super.onResume()
     }
 }
+

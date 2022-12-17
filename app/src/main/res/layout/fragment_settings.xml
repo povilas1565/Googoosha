@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -22,11 +22,10 @@
             android:padding="12dp"
             app:tint="@color/black_text_color"
             android:src="@drawable/ic_back" />
-
         <TextView
             android:id="@+id/title"
             style="@style/screen_title"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="18dp"
             android:text="@string/settings" />
     </LinearLayout>
 
@@ -50,8 +49,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -66,7 +65,6 @@
                     android:layout_weight="1"
                     android:src="@drawable/next"
                     app:tint="@color/black_text_color" />
-
             </LinearLayout>
 
             <TextView
@@ -80,8 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -104,8 +102,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -134,8 +132,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -158,8 +156,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -182,8 +180,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -201,13 +199,14 @@
 
             </LinearLayout>
 
+
             <LinearLayout
                 android:id="@+id/lasts_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -227,23 +226,22 @@
 
             <TextView
                 style="@style/bold_16sp"
-                android:text="@string/el_address"
+                android:text="@string/email_connections"
                 android:textSize="12sp" />
 
             <LinearLayout
-                android:id="@+id/verify_email"
+                android:id="@+id/email_connections"
                 android:layout_width="match_parent"
-                android:layout_marginTop="8dp"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
                     android:layout_weight="0.1"
                     android:gravity="start"
-                    android:text="@string/verify_address"
+                    android:text="@string/confirmation_of_the_postal_address"
                     android:textSize="15sp" />
 
                 <ImageView
@@ -254,6 +252,9 @@
                     android:src="@drawable/next" />
 
             </LinearLayout>
+
+
+
 
             <TextView
                 style="@style/bold_16sp"
@@ -266,8 +267,8 @@
                 android:layout_marginTop="8dp"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -290,8 +291,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
@@ -314,14 +315,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp">
 
                 <TextView
                     style="@style/medium_16"
                     android:layout_weight="0.1"
                     android:gravity="start"
                     android:text="@string/to_filter_incoming_messages"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:tint="@color/black_text_color"
+                    android:src="@drawable/next" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/notification_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settings_view_color"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/medium_16"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+                    android:text="@string/notification_settings"
                     android:textSize="15sp" />
 
                 <ImageView
@@ -345,8 +371,8 @@
                 android:layout_height="wrap_content"
                 app:tint="@color/black_text_color"
                 android:background="@color/settings_view_color"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp">
 
                 <TextView
                     style="@style/medium_16"
