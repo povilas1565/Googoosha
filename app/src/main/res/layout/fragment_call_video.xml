@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/call_image"
     android:orientation="vertical"
-    tools:context=".screens.fragment.CallFragment">
+    tools:context=".screens.fragment.CallVideoFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                 style="@style/bold_16sp"
                 android:layout_marginStart="0dp"
                 android:layout_marginBottom="12dp"
-                android:text="@string/jennifer_martin"
+                android:text="@string/Nastya"
                 android:textColor="@color/white"
                 android:textSize="28sp" />
 
@@ -70,14 +70,14 @@
                     android:layout_width="58dp"
                     android:layout_height="58dp"
                     android:layout_marginHorizontal="24dp"
-                    app:cardBackgroundColor="@color/call_phone_color"
+                    app:cardBackgroundColor="@color/call_camera_color"
                     app:cardCornerRadius="200dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:src="@drawable/call_phone" />
+                        android:src="@drawable/camera" />
 
                 </androidx.cardview.widget.CardView>
 
