@@ -29,6 +29,6 @@ class ChatsFragment : Fragment() {
         binding.chatExample.setOnClickListener {
             mainReplaceFragment(ChatFragment())
         }
+        }
     }
 
-}

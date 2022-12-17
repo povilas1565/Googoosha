@@ -49,9 +49,17 @@
         android:layout_width="104dp"
         android:layout_height="104dp"
         android:layout_marginTop="48dp"
-        app:cardBackgroundColor="@color/pink_color"
-        app:cardCornerRadius="200dp"
-        app:cardElevation="0dp" />
+        app:cardBackgroundColor="@color/white_color"
+        app:cardCornerRadius="300dp"
+        app:cardElevation="0dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile_image">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/username"
@@ -107,5 +115,6 @@
         android:id="@+id/born_date_et"
         android:text="@string/born_date_et"
         style="@style/profile_field_input" />
+
 
 </LinearLayout>

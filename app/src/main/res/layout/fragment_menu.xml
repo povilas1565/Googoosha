@@ -19,7 +19,15 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="64dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="200dp" />
+            app:cardCornerRadius="200dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_image">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.googoosha.databinding.FragmentChatBinding
-import com.example.googoosha.screens.fragment.CallFragment
 import com.example.googoosha.utils.mainReplaceFragment
 
 class ChatFragment : Fragment() {
@@ -27,7 +26,10 @@ class ChatFragment : Fragment() {
 
     private fun initFuns() {
         binding.callBtn.setOnClickListener {
-            mainReplaceFragment(CallFragment())
+            mainReplaceFragment(CallPhoneFragment())
+        }
+        binding.videoBtn.setOnClickListener() {
+            mainReplaceFragment(CallVideoFragment())
         }
     }
 

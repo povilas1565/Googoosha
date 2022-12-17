@@ -86,6 +86,29 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/gift_5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gift_6" />
+
+        </LinearLayout>
+
+
+
     </LinearLayout>
 
     <View
@@ -214,17 +237,6 @@
                 android:paddingHorizontal="12dp"
                 android:paddingVertical="8dp"
                 android:text="@string/women"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:textColor="@color/gray_color"
-                android:background="@drawable/stroke_corner_32"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
-                android:text="@string/general"/>
 
         </LinearLayout>
 

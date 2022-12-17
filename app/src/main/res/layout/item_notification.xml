@@ -1,59 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginBottom="16dp">
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/item_image"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        app:cardBackgroundColor="@color/pink_color"
-        app:cardCornerRadius="100dp"
-        app:cardElevation="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
 
-    <TextView
-        android:id="@+id/item_name"
-        style="@style/bold_16sp"
-        android:layout_marginTop="0dp"
-        android:text="@string/jennifer_martin"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@id/item_image"
-        app:layout_constraintStart_toEndOf="@id/item_image"
-        app:layout_constraintTop_toTopOf="@id/item_image" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/item_text"
-        style="@style/medium_16"
-        android:layout_width="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="0dp"
-        android:text="@string/send_request"
-        android:textColor="@color/gray_color"
-        android:textSize="12sp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@id/item_name"
-        app:layout_constraintEnd_toStartOf="@id/item_date"
-        app:layout_constraintStart_toEndOf="@id/item_name"
-        android:singleLine="true"
-        app:layout_constraintTop_toTopOf="@id/item_name" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_message_1"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/item_date"
-        style="@style/medium_16"
-        android:layout_width="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="0dp"
-        android:text="@string/four"
-        android:textColor="@color/gray_color"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@id/item_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/item_name" />
+        <TextView
+            android:id="@+id/item_name1"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Nastya"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image1"
+            app:layout_constraintStart_toEndOf="@id/item_image1"
+            app:layout_constraintTop_toTopOf="@id/item_image1" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/item_text1"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="@string/liked"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name1"
+            app:layout_constraintEnd_toStartOf="@id/item_date1"
+            app:layout_constraintStart_toEndOf="@id/item_name1"
+            app:layout_constraintTop_toTopOf="@id/item_name1" />
+
+        <TextView
+            android:id="@+id/item_date1"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/today"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_name1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_message_2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/item_name2"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Keti"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image2"
+            app:layout_constraintStart_toEndOf="@id/item_image2"
+            app:layout_constraintTop_toTopOf="@id/item_image2" />
+
+
+        <TextView
+            android:id="@+id/item_text2"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="@string/sned"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name2"
+            app:layout_constraintEnd_toStartOf="@id/item_date2"
+            app:layout_constraintStart_toEndOf="@id/item_name2"
+            app:layout_constraintTop_toTopOf="@id/item_name2" />
+
+        <TextView
+            android:id="@+id/item_date2"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/four"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_name2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_message_3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/item_name3"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Anna"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image3"
+            app:layout_constraintStart_toEndOf="@id/item_image3"
+            app:layout_constraintTop_toTopOf="@id/item_image3" />
+
+
+        <TextView
+            android:id="@+id/item_text3"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="@string/like"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name3"
+            app:layout_constraintEnd_toStartOf="@id/item_date3"
+            app:layout_constraintStart_toEndOf="@id/item_name3"
+            app:layout_constraintTop_toTopOf="@id/item_name3" />
+
+        <TextView
+            android:id="@+id/item_date3"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/four"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_name3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_message_4"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/item_name4"
+            style="@style/bold_16sp"
+            android:layout_marginStart="32dp"
+            android:text="@string/Nika"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image4"
+            app:layout_constraintStart_toEndOf="@id/item_image4"
+            app:layout_constraintTop_toTopOf="@id/item_image4"
+            app:layout_constraintVertical_bias="0.466" />
+
+        <TextView
+            android:id="@+id/item_text4"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="@string/liking"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name4"
+            app:layout_constraintEnd_toStartOf="@id/item_date4"
+            app:layout_constraintStart_toEndOf="@id/item_name4"
+            app:layout_constraintTop_toTopOf="@id/item_name4" />
+
+        <TextView
+            android:id="@+id/item_date4"
+            style="@style/medium_16"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/six"
+            android:textColor="@color/gray_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_name4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_name4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

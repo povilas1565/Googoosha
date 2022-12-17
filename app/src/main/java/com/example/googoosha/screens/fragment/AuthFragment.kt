@@ -32,6 +32,22 @@ class AuthFragment : Fragment() {
             startActivity(Intent(AUTH, MainActivity::class.java))
             AUTH.finish()
         }
+
+        binding.facebookBtn.setOnClickListener() {
+            startActivity(Intent(AUTH, MainActivity::class.java))
+            AUTH.finish();
+        }
+
+        binding.vkontakteBtn.setOnClickListener() {
+            startActivity(Intent(AUTH, MainActivity::class.java))
+            AUTH.finish();
+        }
+
+        binding.googleBtn.setOnClickListener() {
+            startActivity(Intent(AUTH, MainActivity::class.java))
+            AUTH.finish();
+        }
+
         binding.mailBtn.setOnClickListener {
             authReplaceFragment(SignupFragment())
         }

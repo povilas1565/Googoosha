@@ -66,7 +66,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gilroy_bold"
-                    android:text="@string/shakila_mahmud_25"
+                    android:text="@string/Настя_25"
                     android:textColor="@color/black_text_color"
                     android:textSize="24sp" />
 

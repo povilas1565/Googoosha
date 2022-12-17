@@ -22,8 +22,10 @@
         android:text="@string/to_auth"
         app:layout_constraintBottom_toBottomOf="@id/back_btn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/back_btn" />
+        app:layout_constraintTop_toTopOf="@id/back_btn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/welcome_title"
@@ -53,6 +55,7 @@
     <EditText
         android:id="@+id/username_et"
         style="@style/auth_input"
+        android:layout_marginTop="24dp"
         android:hint="@string/user_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +86,6 @@
         android:text="@string/to_auth"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/forgot_password" />
 
@@ -116,7 +118,7 @@
         style="@style/btn_corner_32"
         android:layout_width="370dp"
         android:layout_height="53dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/vkontakte_color"
         android:drawableStart="@drawable/vkontakte"
         android:drawablePadding="-32dp"
@@ -124,21 +126,30 @@
         android:text="@string/register_with_vk"
         android:textColor="@color/white_text_color"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/or" />
+        app:layout_constraintTop_toBottomOf="@+id/facebook_btn" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/google_btn"
         style="@style/stroke_32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/google_color"
         android:drawableStart="@drawable/google"
         android:text="@string/register_with_google"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vkontakte_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mail_btn"
+        style="@style/stroke_32dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/signup_with_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebook_btn" />
 
     <TextView
         android:id="@+id/textView"

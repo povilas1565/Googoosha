@@ -42,9 +42,18 @@ class MainFragment : Fragment() {
         binding.likeBtn.setOnClickListener {
             replaceFragment(CoincidenceFragment())
         }
-        binding.userExample.setOnClickListener {
+        binding.user1Example.setOnClickListener {
             mainReplaceFragment(OtherProfileFragment())
         }
+
+        binding.user2Example.setOnClickListener {
+            mainReplaceFragment(OtherProfileFragment())
+        }
+
+        binding.user3Example.setOnClickListener {
+            mainReplaceFragment(OtherProfileFragment())
+        }
+
         binding.menuBtn.setOnClickListener {
             mainReplaceFragment(MenuFragment())
         }

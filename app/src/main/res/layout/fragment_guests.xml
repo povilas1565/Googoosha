@@ -45,30 +45,37 @@
         android:id="@+id/chat_example"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/item_image"
-            android:layout_width="58dp"
-            android:layout_height="58dp"
+            android:id="@+id/item_image1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             app:cardBackgroundColor="@color/pink_color"
-            app:cardCornerRadius="100dp"
+            app:cardCornerRadius="60dp"
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_photo_1">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/item_name"
+            android:id="@+id/item_name1"
             style="@style/bold_16sp"
             android:layout_marginTop="0dp"
             android:text="@string/Nastya"
             android:textColor="@color/black_text_color"
-            app:layout_constraintBottom_toBottomOf="@id/item_image"
-            app:layout_constraintStart_toEndOf="@id/item_image"
-            app:layout_constraintTop_toTopOf="@id/item_image" />
+            app:layout_constraintBottom_toBottomOf="@id/item_image1"
+            app:layout_constraintStart_toEndOf="@id/item_image1"
+            app:layout_constraintTop_toTopOf="@id/item_image1" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -77,9 +84,9 @@
             app:cardCornerRadius="4dp"
             app:cardElevation="0dp"
             app:contentPadding="8dp"
-            app:layout_constraintBottom_toBottomOf="@id/item_image"
+            app:layout_constraintBottom_toBottomOf="@id/item_image1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/item_image">
+            app:layout_constraintTop_toTopOf="@id/item_image1">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -105,6 +112,648 @@
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_2">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name2"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Keti"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image2"
+            app:layout_constraintStart_toEndOf="@id/item_image2"
+            app:layout_constraintTop_toTopOf="@id/item_image2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_3">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name3"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Anna"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image3"
+            app:layout_constraintStart_toEndOf="@id/item_image3"
+            app:layout_constraintTop_toTopOf="@id/item_image3" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_4">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name4"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Nika"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image4"
+            app:layout_constraintStart_toEndOf="@id/item_image4"
+            app:layout_constraintTop_toTopOf="@id/item_image4" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_3">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name5"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Tanya"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image5"
+            app:layout_constraintStart_toEndOf="@id/item_image5"
+            app:layout_constraintTop_toTopOf="@id/item_image5" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_4">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name6"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Yulya"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image6"
+            app:layout_constraintStart_toEndOf="@id/item_image6"
+            app:layout_constraintTop_toTopOf="@id/item_image6" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image6">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_3">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name7"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Natasha"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image7"
+            app:layout_constraintStart_toEndOf="@id/item_image7"
+            app:layout_constraintTop_toTopOf="@id/item_image7" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image7">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_4">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name8"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Marina"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image8"
+            app:layout_constraintStart_toEndOf="@id/item_image8"
+            app:layout_constraintTop_toTopOf="@id/item_image8"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image9"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_3">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name9"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Ekaterina"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image9"
+            app:layout_constraintStart_toEndOf="@id/item_image9"
+            app:layout_constraintTop_toTopOf="@id/item_image9"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image9">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_image10"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_4">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_name10"
+            style="@style/bold_16sp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Svetlana"
+            android:textColor="@color/black_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/item_image10"
+            app:layout_constraintStart_toEndOf="@id/item_image10"
+            app:layout_constraintTop_toTopOf="@id/item_image10"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pink_color"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/item_image10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_image10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/send"
+                    android:textColor="@color/white_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/price"
+                    app:tint="@color/white_text_color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </LinearLayout>

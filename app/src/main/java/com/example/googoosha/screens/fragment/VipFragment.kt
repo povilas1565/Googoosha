@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.googoosha.R
 import com.example.googoosha.databinding.FragmentVipBinding
+import com.example.googoosha.utils.authReplaceFragment
 
 class VipFragment : Fragment() {
    private lateinit var binding: FragmentVipBinding
@@ -21,5 +22,12 @@ class VipFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        initFuns()
+    }
+
+    private fun initFuns() {
+        binding.signupBtn.setOnClickListener {
+            authReplaceFragment(SignupFragment(), false)
+        }
     }
 }

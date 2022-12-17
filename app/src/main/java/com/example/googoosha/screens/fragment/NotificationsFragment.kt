@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.googoosha.R
 import com.example.googoosha.databinding.FragmentNotificationsBinding
+import com.example.googoosha.utils.mainReplaceFragment
 
 class NotificationsFragment : Fragment() {
   private lateinit var binding: FragmentNotificationsBinding
@@ -21,6 +22,26 @@ class NotificationsFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        initFuns()
+    }
+
+    private fun initFuns() {
+        binding.acceptBtn1.setOnClickListener() {
+            mainReplaceFragment(NotificationsFragment())
+        }
+
+        binding.acceptBtn2.setOnClickListener() {
+            mainReplaceFragment(NotificationsFragment())
+        }
+
+        binding.acceptBtn3.setOnClickListener() {
+            mainReplaceFragment(NotificationsFragment())
+        }
+
+        binding.acceptBtn4.setOnClickListener() {
+            mainReplaceFragment(NotificationsFragment())
+        }
+
     }
 
 }

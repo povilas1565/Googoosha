@@ -27,7 +27,15 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             app:cardBackgroundColor="@color/pink_color"
-            app:cardCornerRadius="100dp" />
+            app:cardCornerRadius="100dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_photo_1">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:text="@string/jennifer_martin" />
+                android:text="@string/Nastya" />
 
             <TextView
                 android:id="@+id/online"
@@ -52,7 +60,6 @@
                 android:gravity="start"
                 android:text="@string/online"
                 android:textColor="@color/gray_color" />
-
 
         </LinearLayout>
 

@@ -29,5 +29,5 @@ class ProfileFragment : Fragment() {
         binding.editBtn.setOnClickListener {
             replaceFragment(ProfileEditFragment())
         }
+        }
     }
-}
