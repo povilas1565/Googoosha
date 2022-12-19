@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="bg_color">#F9FAFB</color>
+    <color name="ic_icon_background">#FFFFFF</color>
     <color name="s_pink_gradient_color">#EF3672</color>
     <color name="f_pink_gradient_color">#EF3657</color>
     <color name="black_text_color">#000000</color>

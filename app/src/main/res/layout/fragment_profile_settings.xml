@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/bg_color"
-    tools:context=".screens.fragment.SafetyFragment">
+    tools:context=".screens.fragment.ProfileSettingsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,11 +27,11 @@
             android:id="@+id/title"
             style="@style/screen_title"
             android:layout_marginEnd="32dp"
-            android:text="@string/safety" />
+            android:text="@string/profile_settings" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/about_passwords"
+        android:id="@+id/name_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -41,8 +41,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/about_password"
-            android:textSize="17sp" />
+            android:text="@string/name_change"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/binding_phone"
+        android:id="@+id/city_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -63,8 +63,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/binding_phone"
-            android:textSize="17sp" />
+            android:text="@string/city_edit"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/about_hacking"
+        android:id="@+id/password_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -85,8 +85,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/about_hacking"
-            android:textSize="17sp" />
+            android:text="@string/password_edit"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -97,7 +97,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/hacking_pincodes"
+        android:id="@+id/email_connections"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -107,8 +107,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/hacking_pincodes"
-            android:textSize="17sp" />
+            android:text="@string/change_email_address"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -119,7 +119,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/sending_sms"
+        android:id="@+id/notifications_settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -129,8 +129,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/sending_sms"
-            android:textSize="17sp" />
+            android:text="@string/notifications_settings"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -141,7 +141,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/about_phones"
+        android:id="@+id/notifications_to_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -151,8 +151,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/about_phones"
-            android:textSize="17sp" />
+            android:text="@string/notifications_to_email"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -163,7 +163,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/recommendations"
+        android:id="@+id/delete_questionnaire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -173,8 +173,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/general_recommendations"
-            android:textSize="17sp" />
+            android:text="@string/delete_questionnaire"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -183,4 +183,5 @@
             android:src="@drawable/next" />
 
     </LinearLayout>
+
 </LinearLayout>

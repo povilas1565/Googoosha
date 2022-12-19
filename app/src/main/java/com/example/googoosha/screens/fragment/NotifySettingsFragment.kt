@@ -5,17 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.googoosha.databinding.FragmentChatSupportBinding
+import com.example.googoosha.databinding.FragmentNotifySettingsBinding
 
-
-class ChatSupportFragment : Fragment() {
-    private lateinit var binding : FragmentChatSupportBinding
+class NotifySettingsFragment : Fragment() {
+    private lateinit var binding: FragmentNotifySettingsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentChatSupportBinding.inflate(inflater, container ,false)
+        binding = FragmentNotifySettingsBinding.inflate(inflater, container, false)
         return binding.root
     }
 

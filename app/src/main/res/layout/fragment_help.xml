@@ -260,4 +260,71 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/messages_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/messages"
+            app:tint="@color/black_text_color" />
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_width="331dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/support"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/email_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/email"
+            app:tint="@color/black_text_color" />
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_width="331dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="start"
+            android:text="@string/contact_email"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/black_text_color" />
+
+    </LinearLayout>
+
+
 </LinearLayout>

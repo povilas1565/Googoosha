@@ -24,5 +24,29 @@ class SafetyFragment : Fragment() {
         binding.aboutPasswords.setOnClickListener {
             mainReplaceFragment(AboutPasswordsFragment())
         }
+
+        binding.bindingPhone.setOnClickListener() {
+            mainReplaceFragment(LinkFragment())
+        }
+
+        binding.aboutHacking.setOnClickListener() {
+            mainReplaceFragment(AboutHackingFragment())
+        }
+
+        binding.hackingPincodes.setOnClickListener() {
+            mainReplaceFragment(HackingPincodesFragment())
+        }
+
+        binding.sendingSms.setOnClickListener() {
+            mainReplaceFragment(SendingSMSFragment())
+        }
+
+        binding.aboutPhones.setOnClickListener() {
+            mainReplaceFragment(AboutPhonesFragment())
+        }
+
+        binding.recommendations.setOnClickListener() {
+            mainReplaceFragment(GeneralRecommendationsFragment())
+        }
     }
 }

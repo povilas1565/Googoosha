@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/bg_color"
-    tools:context=".screens.fragment.SafetyFragment">
+    tools:context=".screens.fragment.FriendshipFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,11 +27,11 @@
             android:id="@+id/title"
             style="@style/screen_title"
             android:layout_marginEnd="32dp"
-            android:text="@string/safety" />
+            android:text="@string/friendship_chatting" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/about_passwords"
+        android:id="@+id/few_guests"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -41,8 +41,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/about_password"
-            android:textSize="17sp" />
+            android:text="@string/few_guests"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/binding_phone"
+        android:id="@+id/correspondence_and_comments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -63,8 +63,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/binding_phone"
-            android:textSize="17sp" />
+            android:text="@string/correspondence_and_comments"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/about_hacking"
+        android:id="@+id/not_read"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -85,8 +85,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/about_hacking"
-            android:textSize="17sp" />
+            android:text="@string/not_read"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -97,7 +97,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/hacking_pincodes"
+        android:id="@+id/spam"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -107,8 +107,8 @@
             style="@style/medium_16"
             android:layout_weight="0.1"
             android:gravity="start"
-            android:text="@string/hacking_pincodes"
-            android:textSize="17sp" />
+            android:text="@string/spam"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -118,69 +118,5 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/sending_sms"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp">
 
-        <TextView
-            style="@style/medium_16"
-            android:layout_weight="0.1"
-            android:gravity="start"
-            android:text="@string/sending_sms"
-            android:textSize="17sp" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/next" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/about_phones"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            style="@style/medium_16"
-            android:layout_weight="0.1"
-            android:gravity="start"
-            android:text="@string/about_phones"
-            android:textSize="17sp" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/next" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/recommendations"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            style="@style/medium_16"
-            android:layout_weight="0.1"
-            android:gravity="start"
-            android:text="@string/general_recommendations"
-            android:textSize="17sp" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/next" />
-
-    </LinearLayout>
 </LinearLayout>

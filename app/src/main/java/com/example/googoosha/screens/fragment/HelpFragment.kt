@@ -24,5 +24,48 @@ class HelpFragment : Fragment() {
         binding.safety.setOnClickListener {
             mainReplaceFragment(SafetyFragment())
         }
+
+        binding.guide.setOnClickListener() {
+            mainReplaceFragment(GuideFragment())
+        }
+
+        binding.friendship.setOnClickListener() {
+            mainReplaceFragment(FriendshipFragment())
+        }
+
+        binding.replenishment.setOnClickListener() {
+            mainReplaceFragment(ReplenishmentFragment())
+        }
+        binding.services.setOnClickListener() {
+            mainReplaceFragment(ServicesAndAdditionalServicesFragment())
+        }
+
+        binding.settings.setOnClickListener() {
+            mainReplaceFragment(ProfileSettingsFragment())
+        }
+
+        binding.photos.setOnClickListener() {
+            mainReplaceFragment(PhotoFragment())
+        }
+
+        binding.rules.setOnClickListener() {
+            mainReplaceFragment(SiteRulesFragment())
+        }
+
+        binding.userAgreement.setOnClickListener() {
+            mainReplaceFragment(TermsOfUseFragment())
+        }
+
+        binding.aboutApp.setOnClickListener() {
+            mainReplaceFragment(AboutAppFragment())
+        }
+
+        binding.support.setOnClickListener() {
+            mainReplaceFragment(SupportFragment())
+        }
+
+        binding.email.setOnClickListener() {
+            mainReplaceFragment(EmailFragment())
+        }
     }
 }
