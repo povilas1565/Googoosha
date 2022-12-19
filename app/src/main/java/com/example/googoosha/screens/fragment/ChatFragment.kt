@@ -28,6 +28,7 @@ class ChatFragment : Fragment() {
         binding.callBtn.setOnClickListener {
             mainReplaceFragment(CallPhoneFragment())
         }
+
         binding.videoBtn.setOnClickListener() {
             mainReplaceFragment(CallVideoFragment())
         }

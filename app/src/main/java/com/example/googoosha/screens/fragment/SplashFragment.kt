@@ -28,6 +28,7 @@ class SplashFragment : Fragment() {
         binding.authBtn.setOnClickListener {
             authReplaceFragment(AuthFragment(), false)
         }
+
         binding.signupBtn.setOnClickListener {
             authReplaceFragment(SignupFragment(), false)
         }

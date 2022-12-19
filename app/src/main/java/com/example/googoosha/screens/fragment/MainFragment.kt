@@ -35,13 +35,16 @@ class MainFragment : Fragment() {
         binding.notifyBtn.setOnClickListener {
             replaceFragment(NotificationsFragment())
         }
+
         binding.filterBtn.setOnClickListener {
             binding.alphaBg.visibility = View.VISIBLE
             binding.filterView.visibility = View.VISIBLE
         }
+
         binding.likeBtn.setOnClickListener {
             replaceFragment(CoincidenceFragment())
         }
+
         binding.user1Example.setOnClickListener {
             mainReplaceFragment(OtherProfileFragment())
         }

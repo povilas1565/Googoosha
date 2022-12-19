@@ -40,56 +40,72 @@ class MenuFragment : Fragment() {
         binding.vipStatus.setOnClickListener {
             mainReplaceFragment(VipFragment())
         }
+
         binding.profile.setOnClickListener {
             replaceFragment(ProfileFragment())
         }
+
         binding.message.setOnClickListener {
             replaceFragment(ChatsFragment())
         }
+
         binding.notifications.setOnClickListener {
             replaceFragment(NotificationsFragment())
         }
+
         binding.favourites.setOnClickListener {
             replaceFragment(FavouritesFragment())
         }
+
         binding.settings.setOnClickListener {
             mainReplaceFragment(SettingsFragment())
         }
+
         binding.guests.setOnClickListener {
             replaceFragment(GuestsFragment())
         }
+
         binding.friends.setOnClickListener {
             replaceFragment(FriendsFragment())
         }
+
         binding.help.setOnClickListener {
             replaceFragment(HelpFragment())
         }
+
         binding.shop.setOnClickListener {
             replaceFragment(GiftsFragment())
         }
+
         binding.nightBtn.setOnClickListener {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             binding.nightBtn.visibility = View.GONE
             binding.lightBtn.visibility = View.VISIBLE
         }
+
         binding.lightBtn.setOnClickListener {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             binding.nightBtn.visibility = View.VISIBLE
             binding.lightBtn.visibility = View.GONE
         }
+
         binding.exit.setOnClickListener {
             startActivity(Intent(APP, AuthActivity::class.java))
             APP.finish()
         }
+
         binding.englishBtn.setOnClickListener {
             setLocale("en")
         }
+
         binding.russianBtn.setOnClickListener {
             setLocale("ru")
         }
+
         binding.uzbekBtn.setOnClickListener {
             setLocale("uz")
         }
+
         binding.turkishBtn.setOnClickListener {
             setLocale("tr")
         }

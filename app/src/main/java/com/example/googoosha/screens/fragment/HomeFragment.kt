@@ -28,6 +28,7 @@ class HomeFragment : Fragment() {
         binding.notifyBtn.setOnClickListener {
             replaceFragment(NotificationsFragment())
         }
+
         binding.filterBtn.setOnClickListener {
             binding.alphaBg.visibility = View.VISIBLE
             binding.filterView.visibility = View.VISIBLE
