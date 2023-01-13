@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.googoosha.databinding.FragmentMainBinding
+import com.example.googoosha.utils.authReplaceFragment
 import com.example.googoosha.utils.hideBottomNav
 import com.example.googoosha.utils.mainReplaceFragment
 import com.example.googoosha.utils.replaceFragment
@@ -39,6 +40,10 @@ class MainFragment : Fragment() {
         binding.filterBtn.setOnClickListener {
             binding.alphaBg.visibility = View.VISIBLE
             binding.filterView.visibility = View.VISIBLE
+        }
+
+        binding.signupBtn.setOnClickListener {
+            authReplaceFragment(SignupFragment(), false)
         }
 
         binding.likeBtn.setOnClickListener {

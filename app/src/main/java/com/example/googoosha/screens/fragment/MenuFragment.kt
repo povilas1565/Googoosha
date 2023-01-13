@@ -85,8 +85,8 @@ class MenuFragment : Fragment() {
 
         binding.lightBtn.setOnClickListener {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            binding.nightBtn.visibility = View.VISIBLE
             binding.lightBtn.visibility = View.GONE
+            binding.nightBtn.visibility = View.VISIBLE
         }
 
         binding.exit.setOnClickListener {

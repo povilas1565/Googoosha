@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg_color"
     android:orientation="vertical"
+    android:visibility="visible"
     tools:context=".screens.fragment.HomeFragment">
 
     <LinearLayout
@@ -73,7 +74,8 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="visible">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -232,7 +234,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+        <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -256,100 +258,100 @@
 
         </LinearLayout>
 
-        <TextView
-            style="@style/screen_title"
-            android:layout_marginTop="28dp"
-            android:gravity="start"
-            android:text="@string/childrens"/>
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginTop="28dp"
+                android:gravity="start"
+                android:text="@string/childrens" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/corner_32"
-                android:backgroundTint="@color/pink_color"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
-                android:text="@string/yes"
-                android:textColor="@color/white_text_color" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/corner_32"
+                    android:backgroundTint="@color/pink_color"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/yes"
+                    android:textColor="@color/white_text_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/stroke_corner_32"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/no"
+                    android:textColor="@color/gray_color" />
+
+            </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/stroke_corner_32"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
-                android:text="@string/no"
-                android:textColor="@color/gray_color" />
-
-        </LinearLayout>
-
-
-        <TextView
-            style="@style/screen_title"
-            android:layout_marginTop="28dp"
-            android:gravity="start"
-            android:text="@string/purpose_of_acquaintance"/>
+                style="@style/screen_title"
+                android:layout_marginTop="28dp"
+                android:gravity="start"
+                android:text="@string/purpose_of_acquaintance" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/corner_32"
-                android:backgroundTint="@color/pink_color"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
-                android:text="@string/love_and_relationship"
-                android:textColor="@color/white_text_color" />
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/corner_32"
+                    android:backgroundTint="@color/pink_color"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/love_and_relationship"
+                    android:textColor="@color/white_text_color" />
 
-        <TextView
-            style="@style/screen_title"
-            android:layout_marginTop="28dp"
-            android:gravity="start"
-            android:text="@string/family_status"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/screen_title"
+                android:layout_marginTop="28dp"
+                android:gravity="start"
+                android:text="@string/family_status" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/corner_32"
-                android:backgroundTint="@color/pink_color"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
-                android:text="@string/unmarried"
-                android:textColor="@color/white_text_color" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/corner_32"
+                    android:backgroundTint="@color/pink_color"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/unmarried"
+                    android:textColor="@color/white_text_color" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/stroke_corner_32"
-                android:backgroundTint="@color/pink_color"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
-                android:text="@string/married"
-                android:textColor="@color/white_text_color" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/stroke_corner_32"
+                    android:backgroundTint="@color/pink_color"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/married"
+                    android:textColor="@color/white_text_color" />
 
-        </LinearLayout>
+            </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -368,18 +370,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
         </LinearLayout>
 
         <Button
             style="@style/btn_corner_32"
-            android:layout_marginHorizontal="0dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="56dp"
-            android:paddingVertical="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/pink_color"
             android:text="@string/to_save_edits"
-            android:textColor="@color/white_text_color" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
-
 </LinearLayout>
+
+
+
