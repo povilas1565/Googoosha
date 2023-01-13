@@ -57,24 +57,28 @@ class MenuFragment : Fragment() {
             replaceFragment(FavouritesFragment())
         }
 
-        binding.settings.setOnClickListener {
-            mainReplaceFragment(SettingsFragment())
+        binding.friends.setOnClickListener {
+            replaceFragment(FriendsFragment())
         }
 
         binding.guests.setOnClickListener {
             replaceFragment(GuestsFragment())
         }
 
-        binding.friends.setOnClickListener {
-            replaceFragment(FriendsFragment())
+        binding.shop.setOnClickListener {
+            replaceFragment(GiftsFragment())
+        }
+
+        binding.settings.setOnClickListener {
+            mainReplaceFragment(SettingsFragment())
+        }
+
+        binding.statistics.setOnClickListener {
+            mainReplaceFragment(StatisticsFragment())
         }
 
         binding.help.setOnClickListener {
             replaceFragment(HelpFragment())
-        }
-
-        binding.shop.setOnClickListener {
-            replaceFragment(GiftsFragment())
         }
 
         binding.nightBtn.setOnClickListener {
