@@ -200,14 +200,14 @@
 
         <TextView
             style="@style/screen_title"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="12dp"
             android:gravity="start"
             android:text="@string/location" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
@@ -218,8 +218,8 @@
                 android:textColor="@color/gray_color" />
 
             <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:layout_weight="1"
                 android:src="@drawable/next"
                 app:tint="@color/gray_color" />
@@ -228,7 +228,7 @@
 
         <TextView
             style="@style/screen_title"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="12dp"
             android:gravity="start"
             android:text="@string/distance" />
 
@@ -246,7 +246,7 @@
 
         <TextView
             style="@style/screen_title"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="12dp"
             android:gravity="start"
             android:text="@string/age" />
 
@@ -263,7 +263,7 @@
 
         <TextView
             style="@style/screen_title"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="12dp"
             android:gravity="start"
             android:text="@string/intersted_in" />
 
@@ -275,30 +275,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/corner_32"
                 android:backgroundTint="@color/pink_color"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
                 android:text="@string/man"
                 android:textColor="@color/white_text_color" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/stroke_corner_32"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="8dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
                 android:text="@string/women"
                 android:textColor="@color/gray_color" />
 
+        </LinearLayout>
+
             <TextView
                 style="@style/screen_title"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="18dp"
                 android:gravity="start"
-                android:text="@string/childrens"/>
+                android:text="@string/childrens" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -308,31 +310,30 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="12dp"
                     android:background="@drawable/corner_32"
                     android:backgroundTint="@color/pink_color"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
                     android:text="@string/yes"
                     android:textColor="@color/white_text_color" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
                     android:background="@drawable/stroke_corner_32"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
                     android:text="@string/no"
                     android:textColor="@color/gray_color" />
 
             </LinearLayout>
 
-
             <TextView
                 style="@style/screen_title"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="18dp"
                 android:gravity="start"
                 android:text="@string/purpose_of_acquaintance"/>
 
@@ -344,22 +345,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="12dp"
                     android:background="@drawable/corner_32"
                     android:backgroundTint="@color/pink_color"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
                     android:text="@string/love_and_relationship"
                     android:textColor="@color/white_text_color" />
-            </LinearLayout>
 
-            <SeekBar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+            </LinearLayout>
 
             <TextView
                 style="@style/screen_title"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="18dp"
                 android:gravity="start"
                 android:text="@string/family_status"/>
 
@@ -371,37 +369,37 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="12dp"
                     android:background="@drawable/corner_32"
                     android:backgroundTint="@color/pink_color"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
                     android:text="@string/unmarried"
                     android:textColor="@color/white_text_color" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
                     android:background="@drawable/stroke_corner_32"
                     android:backgroundTint="@color/pink_color"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
                     android:text="@string/married"
                     android:textColor="@color/white_text_color" />
 
-        </LinearLayout>
+            </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <TextView
                 style="@style/screen_title"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="18dp"
                 android:layout_weight="1"
                 android:gravity="start"
                 android:text="@string/notifications_sound" />
@@ -410,20 +408,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
-
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup_btn"
             style="@style/btn_corner_32"
-            android:layout_marginHorizontal="0dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="56dp"
-            android:paddingVertical="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/pink_color"
             android:text="@string/to_save_edits"
-            android:textColor="@color/white_text_color" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

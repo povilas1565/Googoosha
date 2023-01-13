@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/pink_gradient"
     android:orientation="horizontal"
-    tools:context=".screens.fragment.MenuFragment">
+    android:visibility="visible"
+    tools:context=".screens.fragment.MenuFragment"
+    tools:visibility="visible">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,7 +21,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="64dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="200dp" >
+            app:cardCornerRadius="200dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -45,8 +47,9 @@
             <ImageView
                 android:id="@+id/night_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="64dp"
+                android:visibility="visible"
                 android:src="@drawable/moon" />
 
             <ImageView
