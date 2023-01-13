@@ -1,7 +1,384 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favourites_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screens.fragment.FavouritesFragment">
-</FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black_text_color" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/screen_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingStart="32dp"
+            android:text="@string/sympathy" />
+
+        <ImageView
+            android:id="@+id/filter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:src="@drawable/filter" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="355dp"
+        android:layout_height="694dp"
+        android:src="@drawable/call_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <View
+        android:id="@+id/alpha_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@color/black"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-32dp"
+        android:background="@drawable/corner_32"
+        android:backgroundTint="@color/bg_color"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_cross"
+            app:tint="@color/black" />
+
+        <TextView
+            style="@style/screen_title"
+            android:layout_weight="1"
+            android:paddingStart="64dp"
+            android:text="@string/filters" />
+
+        <TextView
+            style="@style/medium_16"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/to_clear"
+            android:textColor="@color/gray_color" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/screen_title"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/location" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/screen_title"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/location_example"
+            android:textColor="@color/gray_color" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            app:tint="@color/gray_color" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/screen_title"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/distance" />
+
+    <TextView
+        style="@style/screen_title"
+        android:fontFamily="@font/gilroy_medium"
+        android:gravity="end"
+        android:text="@string/distance_metres"
+        android:textSize="14sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        style="@style/screen_title"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/age" />
+
+    <TextView
+        style="@style/screen_title"
+        android:fontFamily="@font/gilroy_medium"
+        android:gravity="end"
+        android:text="@string/ages"
+        android:textSize="14sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/screen_title"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/intersted_in" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/man"
+            android:textColor="@color/white_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/stroke_corner_32"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/women"
+            android:textColor="@color/gray_color" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/screen_title"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/childrens" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/yes"
+            android:textColor="@color/white_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/stroke_corner_32"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/no"
+            android:textColor="@color/gray_color" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/screen_title"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/purpose_of_acquaintance" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/love_and_relationship"
+            android:textColor="@color/white_text_color" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/screen_title"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/family_status" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/unmarried"
+            android:textColor="@color/white_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/stroke_corner_32"
+            android:backgroundTint="@color/pink_color"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/married"
+            android:textColor="@color/white_text_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/screen_title"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/notifications_sound" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/btn_corner_32"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/pink_color"
+        android:text="@string/to_save_edits"
+        android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:background="@color/bg_color"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/search_favourites"
+            android:layout_width="match_parent"
+            app:tint="@color/gray_color"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/favourites_likes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tint="@color/gray_color"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/statistics_favourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tint="@color/gray_color"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/statistics" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_frame"
+        android:layout_width="359dp"
+        android:layout_height="479dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.361" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

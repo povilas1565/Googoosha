@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".screens.fragment.SympathyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/black_text_color"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/screen_title"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingStart="32dp"
+            android:text="@string/sympathy" />
+
+        <ImageView
+            android:id="@+id/filter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:src="@drawable/filter" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="293dp"
+        android:layout_height="208dp"
+        android:src="@drawable/heart"
+        app:tint="@color/pink_color" />
+
+   <LinearLayout
+       android:id="@+id/sympathy"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:background="@color/settings_view_color"
+       android:paddingHorizontal="16dp"
+       android:paddingVertical="12dp">
+
+   <TextView
+       style="@style/medium_16"
+       android:layout_weight="0.1"
+       android:gravity="center"
+       android:text="@string/text_sympathy"
+       android:textSize="15sp" />
+</LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_btn"
+        style="@style/btn_corner_32"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/pink_color"
+        android:text="@string/fast_sympathy"
+        android:textColor="@color/white" />
+</LinearLayout>
+
