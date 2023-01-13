@@ -95,7 +95,4 @@
             android:src="@drawable/next" />
 
     </LinearLayout>
-
-
-
 </LinearLayout>

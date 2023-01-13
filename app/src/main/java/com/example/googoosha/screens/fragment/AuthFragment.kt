@@ -48,8 +48,5 @@ class AuthFragment : Fragment() {
             AUTH.finish();
         }
 
-        binding.mailBtn.setOnClickListener {
-            authReplaceFragment(SignupFragment())
-        }
     }
 }

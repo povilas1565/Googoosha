@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.googoosha.databinding.FragmentSettingsUpNotificationsBinding
+import com.example.googoosha.utils.mainReplaceFragment
 
 class SettingsUpNotificationsFragment : Fragment() {
     private lateinit var binding: FragmentSettingsUpNotificationsBinding
@@ -19,5 +20,13 @@ class SettingsUpNotificationsFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        binding.applicationActive.setOnClickListener {
+            mainReplaceFragment(ApplicationActiveFragment())
+        }
+
+        binding.applicationInactive.setOnClickListener {
+            mainReplaceFragment(ApplicationInactiveFragment())
+        }
+
     }
 }

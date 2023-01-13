@@ -28,5 +28,9 @@ class ServicesAndAdditionalServicesFragment : Fragment() {
         binding.vipStatus.setOnClickListener() {
             mainReplaceFragment(VipStatusFragment())
         }
+
+        binding.sympathy.setOnClickListener {
+            mainReplaceFragment(SympathyFragment())
+        }
     }
 }
