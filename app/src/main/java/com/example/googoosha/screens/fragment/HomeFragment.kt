@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.googoosha.databinding.FragmentHomeBinding
+import com.example.googoosha.utils.authReplaceFragment
+import com.example.googoosha.utils.mainReplaceFragment
 import com.example.googoosha.utils.replaceFragment
 
 class HomeFragment : Fragment() {
@@ -32,6 +34,10 @@ class HomeFragment : Fragment() {
         binding.filterBtn.setOnClickListener {
             binding.alphaBg.visibility = View.VISIBLE
             binding.filterView.visibility = View.VISIBLE
+        }
+
+        binding.signupBtn.setOnClickListener {
+            authReplaceFragment(SignupFragment(), false)
         }
     }
 

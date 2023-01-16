@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.googoosha.databinding.FragmentFavouritesBinding
+import com.example.googoosha.utils.authReplaceFragment
 import com.example.googoosha.utils.replaceFragment
 
 class FavouritesFragment : Fragment() {
@@ -31,9 +32,14 @@ class FavouritesFragment : Fragment() {
             binding.filterView.visibility = View.VISIBLE
         }
 
+        binding.signupBtn.setOnClickListener {
+            authReplaceFragment(SignupFragment(), false)
+        }
+
         binding.searchFavourites.setOnClickListener {
             replaceFragment(SearchFavouritesFragment())
         }
+
 
         binding.favouritesLikes.setOnClickListener {
             replaceFragment(FavouritesLikesFragment())

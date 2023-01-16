@@ -8,9 +8,9 @@
     tools:context=".screens.fragment.FavouritesFragment">
 
     <LinearLayout
-        android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints">
@@ -26,12 +26,18 @@
         <TextView
             android:id="@+id/title"
             style="@style/screen_title"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
             android:paddingStart="32dp"
             android:text="@string/sympathy" />
+
+        <ImageView
+            android:id="@+id/notify_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/notify" />
 
         <ImageView
             android:id="@+id/filter_btn"
@@ -42,14 +48,22 @@
             android:src="@drawable/filter" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="355dp"
-        android:layout_height="694dp"
-        android:src="@drawable/call_image"
+    <LinearLayout
+        android:layout_width="406dp"
+        android:layout_height="686dp"
+        android:gravity="center"
+        android:orientation="horizontal"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="67dp" />
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="45dp">
+
+        <ImageView
+            android:id="@+id/call_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_image"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
     <View
         android:id="@+id/alpha_bg"
@@ -63,7 +77,7 @@
         android:id="@+id/filter_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="-32dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/corner_32"
         android:backgroundTint="@color/bg_color"
         android:orientation="vertical"
@@ -88,7 +102,7 @@
         <TextView
             style="@style/screen_title"
             android:layout_weight="1"
-            android:paddingStart="64dp"
+            android:paddingStart="32dp"
             android:text="@string/filters" />
 
         <TextView
@@ -103,14 +117,14 @@
 
     <TextView
         style="@style/screen_title"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:gravity="start"
         android:text="@string/location" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal">
 
         <TextView
@@ -121,8 +135,8 @@
             android:textColor="@color/gray_color" />
 
         <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/next"
             app:tint="@color/gray_color" />
@@ -131,7 +145,7 @@
 
     <TextView
         style="@style/screen_title"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:gravity="start"
         android:text="@string/distance" />
 
@@ -149,7 +163,7 @@
 
     <TextView
         style="@style/screen_title"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:gravity="start"
         android:text="@string/age" />
 
@@ -164,9 +178,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+        <TextView
+            style="@style/screen_title"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/year" />
+
+        <TextView
+            style="@style/screen_title"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="end"
+            android:text="@string/years"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     <TextView
         style="@style/screen_title"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:gravity="start"
         android:text="@string/intersted_in" />
 
@@ -178,22 +209,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/corner_32"
             android:backgroundTint="@color/pink_color"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
             android:text="@string/man"
             android:textColor="@color/white_text_color" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/stroke_corner_32"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
             android:text="@string/women"
             android:textColor="@color/gray_color" />
 
@@ -201,7 +231,7 @@
 
     <TextView
         style="@style/screen_title"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:gravity="start"
         android:text="@string/childrens" />
 
@@ -213,22 +243,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/corner_32"
             android:backgroundTint="@color/pink_color"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
             android:text="@string/yes"
             android:textColor="@color/white_text_color" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/stroke_corner_32"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
             android:text="@string/no"
             android:textColor="@color/gray_color" />
 
@@ -236,7 +265,7 @@
 
     <TextView
         style="@style/screen_title"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:gravity="start"
         android:text="@string/purpose_of_acquaintance" />
 
@@ -248,19 +277,81 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/corner_32"
-            android:backgroundTint="@color/pink_color"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
             android:text="@string/love_and_relationship"
-            android:textColor="@color/white_text_color" />
+            android:textColor="@color/gray_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/stroke_corner_32"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
+            android:text="@string/friendship"
+            android:textColor="@color/gray_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/stroke_corner_32"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
+            android:text="@string/flirt"
+            android:textColor="@color/gray_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/stroke_corner_32"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
+            android:text="@string/relationship"
+            android:textColor="@color/gray_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/stroke_corner_32"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
+            android:text="@string/maarriage"
+            android:textColor="@color/gray_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/stroke_corner_32"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
+            android:text="@string/virtual"
+            android:textColor="@color/gray_color" />
 
     </LinearLayout>
 
     <TextView
         style="@style/screen_title"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:gravity="start"
         android:text="@string/family_status" />
 
@@ -272,32 +363,32 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/corner_32"
             android:backgroundTint="@color/pink_color"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
             android:text="@string/unmarried"
             android:textColor="@color/white_text_color" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/stroke_corner_32"
             android:backgroundTint="@color/pink_color"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
             android:text="@string/married"
             android:textColor="@color/white_text_color" />
 
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="6dp"
         android:orientation="horizontal">
 
         <TextView
@@ -313,13 +404,15 @@
             android:layout_weight="1" />
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        style="@style/btn_corner_32"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/pink_color"
-        android:text="@string/to_save_edits"
-        android:textColor="@color/white" />
+        <Button
+            android:id="@+id/signup_btn"
+            style="@style/btn_corner_32"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:paddingVertical="12dp"
+            android:text="@string/to_save_edits"
+            android:textColor="@color/white_text_color" />
     </LinearLayout>
 
     <LinearLayout
@@ -349,13 +442,18 @@
             android:id="@+id/favourites_likes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tint="@color/gray_color"
             android:layout_weight="1"
-            android:padding="12dp"
-            android:foreground="?attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
-            android:src="@drawable/heart" />
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:src="@drawable/heart"
+            app:tint="@color/gray_color" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9" />
 
         <ImageView
             android:id="@+id/statistics_favourites"
@@ -368,17 +466,19 @@
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/statistics" />
+
     </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/fragment_frame"
-        android:layout_width="359dp"
-        android:layout_height="479dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/bottom_nav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.361" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

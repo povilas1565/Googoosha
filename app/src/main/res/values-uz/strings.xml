@@ -163,7 +163,7 @@
     <string name="distance_metres">10m-2km</string>
     <string name="notifications_sound">ovozi</string>
     <string name="age">Yosh</string>
-    <string name="ages">18-99 yosh</string>
+    <string name="ages">18 - 99 yosh</string>
     <string name="friends">Do\’stlar</string>
     <string name="guests">Qiziquvchilar</string>
     <string name="shop">Magazin</string>
@@ -305,19 +305,7 @@
     <string name="text_sympathy">Yangi yoqtirishlar yo\'q!\nKo\'proq yoqtirishni xohlaysizmi?\nOvoz bering va xizmatni sinab ko\'ring:</string>
     <string name="fast_sympathy">Tezkor simpatiya</string>
     <string name="number_of_sympathy">Simpatiya (34)</string>
-    <string name="users">Foydalanuvchilar</string>
-    <string name="find_out">Ko\'proq bilib oling</string>
-    <string name="statistics">Statistika</string>
-    <string name="statistics_total_earned">Jami Daromad</string>
-    <string name="statistics_total_earned_from_money">Tangalarni sotishdan</string>
-    <string name="statistics_total_earned_from_reklama">Reklamadan</string>
-    <string name="statistics_total_earned_from_vip">VIP sotishdan</string>
-    <string name="text_users">12578\nFoydalanuvchilar</string>
-    <string name="text_women">12578\nAyollar</string>
-    <string name="text_men">12578\nErkaklar</string>
-    <string name="text_online">Onlayn:</string>
-    <string name="number_online">12578</string>
-    <string name="text_offline">Oflayn:</string>
-    <string name="number_offline">12578</string>
+    <string name="year">Yil</string>
+    <string name="years">18 - 50 yosh</string>
 
 </resources>

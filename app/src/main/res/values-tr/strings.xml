@@ -305,20 +305,7 @@
     <string name="text_sympathy">Yeni beğeni yok!\nDaha fazla beğeni ister misin?\nOy verin ve hizmeti deneyin:</string>
     <string name="fast_sympathy">Fast sympathy</string>
     <string name="number_of_sympathy">Sempati (34)</string>
-    <string name="users">Kullanıcılar</string>
-    <string name="find_out">Daha fazlasını öğrenin</string>
-    <string name="statistics">İstatistik</string>
-    <string name="statistics_total_earned">Toplam Kazanılan</string>
-    <string name="statistics_total_earned_from_money">Madeni paraların satışından</string>
-    <string name="statistics_total_earned_from_reklama">Reklamdan</string>
-    <string name="statistics_total_earned_from_vip">VIP satışından</string>
-    <string name="text_users">12578\nKullanıcılar</string>
-    <string name="text_women">12578\nKadınlar</string>
-    <string name="text_men">12578\nErkekler</string>
-    <string name="text_online">Çevrimiçi:</string>
-    <string name="number_online">12578</string>
-    <string name="text_offline">Çevrimdışı:</string>
-    <string name="number_offline">12578</string>
-
+    <string name="year">Yıl</string>
+    <string name="years">18 - 50 yaş</string>
 
 </resources>

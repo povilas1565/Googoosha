@@ -305,20 +305,7 @@
     <string name="text_sympathy">Нет новых лайков!\nХотите больше лайков?\nПроголосуйте и попробуйте сервис:</string>
     <string name="fast_sympathy">Быстрая симпатия</string>
     <string name="number_of_sympathy">Симпатия (34)</string>
-    <string name="users">Пользователи</string>
-    <string name="find_out">Узнайте больше</string>
-    <string name="statistics">Статистика</string>
-    <string name="statistics_total_earned">Всего Заработано</string>
-    <string name="statistics_total_earned_from_money">Из продажи монет</string>
-    <string name="statistics_total_earned_from_reklama">Из рекламы</string>
-    <string name="statistics_total_earned_from_vip">Из продажи ВИП</string>
-    <string name="text_users">12578\nПользователи</string>
-    <string name="text_women">12578\nЖенщины</string>
-    <string name="text_men">12578\nМужчины</string>
-    <string name="text_online">Онлайн:</string>
-    <string name="number_online">12578</string>
-    <string name="text_offline">Офлайн:</string>
-    <string name="number_offline">12578</string>
-
+    <string name="year">Year</string>
+    <string name="years">18 - 50 лет</string>
 
 </resources>
