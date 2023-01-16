@@ -44,21 +44,22 @@
                 android:text="@string/profile_example"
                 android:textColor="@color/white" />
 
+
             <ImageView
                 android:id="@+id/night_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="64dp"
-                android:visibility="visible"
                 android:src="@drawable/moon" />
 
             <ImageView
                 android:id="@+id/light_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="64dp"
-                android:visibility="gone"
-                android:src="@drawable/moon" />
+                android:src="@drawable/moon"
+                android:visibility="gone"/>
+
 
         </LinearLayout>
 
@@ -137,7 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -164,7 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -185,7 +186,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -206,7 +207,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -227,7 +228,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -248,7 +249,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -269,7 +270,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -290,7 +291,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -312,7 +313,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -329,33 +330,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/statistics"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/statistics"
-                app:tint="@color/white"/>
-
-            <TextView
-                style="@style/screen_title"
-                android:layout_marginStart="12dp"
-                android:text="@string/statistics"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/help"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -376,7 +355,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="18dp"
             android:orientation="horizontal">
 
             <ImageView

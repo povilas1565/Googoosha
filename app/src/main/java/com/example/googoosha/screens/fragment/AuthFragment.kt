@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.googoosha.databinding.FragmentAuthBinding
 import com.example.googoosha.screens.activity.MainActivity
+import com.example.googoosha.utils.APP
 import com.example.googoosha.utils.AUTH
-import com.example.googoosha.utils.authReplaceFragment
+import java.util.*
 
 class AuthFragment : Fragment() {
     private lateinit var binding: FragmentAuthBinding
@@ -47,6 +48,5 @@ class AuthFragment : Fragment() {
             startActivity(Intent(AUTH, MainActivity::class.java))
             AUTH.finish();
         }
-
     }
 }

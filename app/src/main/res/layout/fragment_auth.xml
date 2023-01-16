@@ -27,12 +27,13 @@
         app:layout_constraintTop_toTopOf="@id/back_btn"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
         android:id="@+id/welcome_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/gilroy_bold"
         android:text="@string/welcome"
         android:textColor="@color/black_text_color"
@@ -40,11 +41,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/back_btn" />
 
+
     <TextView
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/gilroy_medium"
         android:text="@string/enter_to_continue"
         android:textColor="@color/gray_color"
@@ -52,10 +54,11 @@
         app:layout_constraintStart_toStartOf="@id/welcome_title"
         app:layout_constraintTop_toBottomOf="@id/welcome_title" />
 
+
     <EditText
         android:id="@+id/username_et"
         style="@style/auth_input"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="18dp"
         android:hint="@string/user_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,55 +105,61 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/facebook_btn"
         style="@style/btn_corner_32"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="18dp"
         android:backgroundTint="@color/facebook_color"
         android:drawableStart="@drawable/facebook"
         android:text="@string/signup_with_facebook"
         android:textColor="@color/white_text_color"
+        android:drawablePadding="-16dp"
+        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toBottomOf="@id/or" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/vkontakte_btn"
         style="@style/btn_corner_32"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="18dp"
         android:backgroundTint="@color/vkontakte_color"
         android:drawableStart="@drawable/vkontakte"
         android:text="@string/register_with_vk"
         android:textColor="@color/white_text_color"
+        android:drawablePadding="-16dp"
+        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toBottomOf="@+id/facebook_btn" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/google_btn"
         style="@style/stroke_32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="18dp"
         android:backgroundTint="@color/google_color"
         android:drawableStart="@drawable/google"
         android:text="@string/register_with_google"
+        android:drawablePadding="0dp"
+        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toBottomOf="@+id/vkontakte_btn" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/gilroy_medium"
         android:gravity="center"
         android:text="@string/policy"
         android:textColor="@color/gray_color"
-        android:textSize="12sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

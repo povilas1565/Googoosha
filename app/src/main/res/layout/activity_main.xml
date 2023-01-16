@@ -71,17 +71,6 @@
             android:src="@drawable/profile"
             app:tint="@color/gray_color" />
 
-        <ImageView
-            android:id="@+id/statistics"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:foreground="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            android:padding="12dp"
-            android:src="@drawable/statistics" />
-
 
     </LinearLayout>
 

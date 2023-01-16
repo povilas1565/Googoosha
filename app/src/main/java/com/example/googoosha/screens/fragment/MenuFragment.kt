@@ -38,7 +38,7 @@ class MenuFragment : Fragment() {
 
     private fun initFuns() {
         binding.vipStatus.setOnClickListener {
-            mainReplaceFragment(VipFragment())
+            replaceFragment(VipFragment())
         }
 
         binding.profile.setOnClickListener {
@@ -70,11 +70,7 @@ class MenuFragment : Fragment() {
         }
 
         binding.settings.setOnClickListener {
-            mainReplaceFragment(SettingsFragment())
-        }
-
-        binding.statistics.setOnClickListener {
-            mainReplaceFragment(StatisticsFragment())
+            replaceFragment(SettingsFragment())
         }
 
         binding.help.setOnClickListener {
@@ -89,8 +85,9 @@ class MenuFragment : Fragment() {
 
         binding.lightBtn.setOnClickListener {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            binding.lightBtn.visibility = View.GONE
             binding.nightBtn.visibility = View.VISIBLE
+            binding.lightBtn.visibility = View.GONE
+
         }
 
         binding.exit.setOnClickListener {
