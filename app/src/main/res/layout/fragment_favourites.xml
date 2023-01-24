@@ -156,10 +156,12 @@
         android:text="@string/distance_metres"
         android:textSize="14sp" />
 
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        <com.google.android.material.slider.RangeSlider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:valueFrom="10"
+            android:valueTo="2000" />
 
     <TextView
         style="@style/screen_title"
@@ -174,28 +176,15 @@
         android:text="@string/ages"
         android:textSize="14sp" />
 
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-        <TextView
-            style="@style/screen_title"
-            android:layout_marginTop="8dp"
-            android:gravity="start"
-            android:text="@string/year" />
-
-        <TextView
-            style="@style/screen_title"
-            android:fontFamily="@font/gilroy_medium"
-            android:gravity="end"
-            android:text="@string/years"
-            android:textSize="14sp" />
-
-        <SeekBar
+        <com.google.android.material.slider.RangeSlider
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:valueFrom="18"
+            android:valueTo="99" />
 
-    <TextView
+
+        <TextView
         style="@style/screen_title"
         android:layout_marginTop="6dp"
         android:gravity="start"

@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.BindingAdapter
+import androidx.databinding.InverseBindingAdapter
+import androidx.databinding.InverseBindingListener
 import com.example.googoosha.databinding.FragmentHomeBinding
 import com.example.googoosha.utils.authReplaceFragment
 import com.example.googoosha.utils.mainReplaceFragment
 import com.example.googoosha.utils.replaceFragment
+import com.google.android.material.slider.RangeSlider
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -40,5 +44,20 @@ class HomeFragment : Fragment() {
             authReplaceFragment(SignupFragment(), false)
         }
     }
+
+    @InverseBindingAdapter(attribute = "values")
+    fun getRangeSlider(slider: RangeSlider): List<Float> {
+        return slider.values
+    }
+
+    @BindingAdapter("app:valuesAttrChanged")
+    fun setListeners(
+        slider: RangeSlider,
+        attrChange: InverseBindingListener
+    ) {
+        val listener = RangeSlider.OnChangeListener { _, _, _ -> attrChange.onChange() }
+        slider.addOnChangeListener(listener)
+    }
+
 
 }
